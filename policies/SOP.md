@@ -1,146 +1,118 @@
-# SOP-01: documentación de eventos, actos e intervención individual
+# SOP-01: documentación de eventos, actos y responsabilidad
 
-Versión 1.0 - obligatorio para todo registro nuevo o revisado.
+Versión 2.0 — obligatoria para todo expediente nuevo o revisado.
 
-## 1. Objeto
+## 1. Finalidad
 
-Este procedimiento establece cómo identificar, investigar, preservar y publicar:
+El archivo preserva actos de órganos públicos venezolanos, permite reconstruir episodios complejos y vincula instituciones y personas únicamente con actuaciones demostrables. La unidad probatoria es el acto; el evento es la relación razonada entre varios actos.
 
-1. un **evento**, entendido como un episodio público delimitado que requiere una explicación conjunta;
-2. los **actos** concretos que lo componen; y
-3. las **personas e instituciones** cuya intervención en cada acto puede demostrarse.
-
-El archivo documenta evidencia y relaciones verificables. No sustituye a un tribunal ni decide consecuencias jurídicas o financieras.
-
-## 2. Unidad de trabajo
+## 2. Unidades
 
 ### Evento
 
-Un evento agrupa actos relacionados por objeto y contexto. Su página debe contener:
-
-- descripción neutral del episodio;
-- alcance temporal y material;
-- pregunta que resuelve el expediente;
-- conclusión y grado de soporte;
-- lista ilimitada de actos, sin categorías cronológicas obligatorias;
-- explicación de cómo los actos sostienen la conclusión;
-- fuentes normativas y referencias externas;
-- vacíos pendientes.
+Episodio delimitado por objeto y periodo. Contiene una descripción, una conclusión apoyada exclusivamente en actos publicados, una lista abierta de actos y los vacíos que impiden cerrar el expediente.
 
 ### Acto
 
-Un acto es una acción, decisión, omisión o comunicación atribuible a un órgano público y delimitable por fecha, objeto y efecto. Cada acto tiene expediente propio y ampliable. Dos conductas distintas no se fusionan solo porque participen las mismas personas.
+Decisión, acción, omisión o comunicación atribuible a un órgano y delimitable por fecha, objeto y efecto. Conductas distintas conservan expedientes distintos, aunque compartan autores o contexto.
+
+### Institución
+
+Órgano con competencia sobre el acto. Su ficha registra la base de competencia, estructura funcional, titulares durante el periodo y actos asociados. La competencia institucional no demuestra por sí sola la intervención individual.
 
 ### Persona
 
-Una persona se vincula al acto, nunca al evento en abstracto. El registro debe precisar el verbo probado: firmó, votó, ordenó, leyó, decidió, ejecutó, certificó, publicó, omitió una obligación individualizada o aportó material.
+Solo se incorpora al índice de responsables cuando una fuente la conecta con una acción concreta. La persona afectada puede mencionarse para explicar el efecto del acto, pero no se incluye en la sección de responsables ni se indexa como tal.
 
-## 3. Jerarquía de fuentes
+## 3. Clases de evidencia publicable
 
-1. **Registro oficial primario**: sentencia, resolución, acta, gaceta, comunicado, oficio, registro audiovisual oficial, base de datos o publicación del órgano autor.
-2. **Copia contemporánea verificable**: reproducción íntegra realizada por otro archivo o medio cuando el original oficial desapareció. Debe conservarse la procedencia y explicarse por qué se considera fiel.
-3. **Norma aplicable**: Constitución, ley, reglamento, resolución o manual vigente para la actuación.
-4. **Corroboración independiente**: observadores, organismos internacionales, estudios académicos, prensa o análisis técnicos identificados.
+| Clase | Descripción | Uso |
+|---|---|---|
+| A | Registro emitido por el órgano autor: sentencia, resolución, acta, gaceta, oficio, comunicado, base o audiovisual oficial | Prueba principal del acto |
+| B | Registro directo de una parte o participante: solicitud, denuncia contemporánea, constancia o comunicación propia | Prueba de lo que esa parte hizo, recibió o declaró |
+| C | Copia contemporánea íntegra de un acto público cuyo original no está disponible | Prueba del contenido visible, con procedencia y limitación expresas |
+| D | Norma o registro oficial de competencia, nombramiento y estructura | Contraste normativo e identificación institucional |
+| E | Decisión oficial de otro Estado u organismo que atribuye nominalmente una conducta | Corroboración atribuida; no sustituye el registro venezolano del acto |
 
-Las fuentes de nivel 4 pueden apoyar una interpretación o acreditar que un documento fue visto, pero no sustituyen el registro oficial cuando se atribuye un acto a una persona concreta.
+Prensa, informes de observación, análisis académicos y comentarios sirven para descubrir o contrastar fuentes durante la investigación. No aparecen como documentos preservados de un acto ni sustituyen una fuente de clases A-E.
 
-## 4. Flujo obligatorio
+## 4. Puerta de preservación
 
-### Paso 1 - Delimitar el evento
+Un documento solo aparece bajo **Evidencia preservada** cuando el repositorio contiene:
 
-Redactar en una frase qué ocurrió y qué cuestión documental se examina. Fijar fecha inicial, fecha final provisional, instituciones y exclusiones de alcance.
+1. copia local inmutable;
+2. nombre e identificador estables;
+3. URL o procedencia de adquisición;
+4. fecha y hora de captura en UTC;
+5. formato y tamaño;
+6. SHA-256 calculado sobre el archivo servido; y
+7. clase de evidencia y relación exacta con el acto.
 
-### Paso 2 - Inventariar actos candidatos
+La URL original acompaña la procedencia, pero nunca es el único acceso. Una captura nueva no reemplaza la anterior: recibe una entrada nueva en el manifiesto.
 
-Crear una fila por cada decisión, acción, omisión o comunicación. No imponer un número mínimo ni máximo. Separar, por ejemplo, la emisión de un resultado, su proclamación, la falta de publicación y su posterior validación judicial.
+## 5. Flujo obligatorio
 
-### Paso 3 - Abrir un expediente por acto
+1. **Delimitar el evento.** Definir objeto, periodo, instituciones y conclusión a examinar.
+2. **Inventariar actos.** Separar cada decisión, acción, omisión o comunicación.
+3. **Definir el registro esperado.** Antes de buscar, nombrar qué resolución, sentencia, acta, registro técnico o publicación debería existir.
+4. **Buscar por capas.** Órgano autor, gacetas y repositorios estatales; copias contemporáneas; archivos web; registros directos de participantes.
+5. **Preservar.** Aplicar la puerta de preservación y añadir el archivo al manifiesto.
+6. **Extraer afirmaciones atómicas.** Cada proposición lleva documento y localizador: página, artículo, párrafo, minuto o campo.
+7. **Contrastar con la norma.** Tabla obligatoria: requisito, fuente, conducta observada y discrepancia.
+8. **Reconstruir competencia.** Identificar órgano, unidad funcional y titulares del periodo mediante documentos de clase D.
+9. **Atribuir responsabilidad.** Aplicar los niveles del apartado 6.
+10. **Redactar el acto.** Exponer conducta, evidencia, efecto, discrepancia, responsables y vacíos.
+11. **Actualizar el evento.** La conclusión se deriva solo de los actos publicados.
+12. **Validar.** Hashes, enlaces locales, metadatos, citas, JSON, lenguaje público y coherencia entre índice, evento y actos.
 
-Asignar identificador estable. Registrar:
+## 6. Niveles de responsabilidad
 
-- emisor y fecha;
-- acción exacta;
-- objeto y efecto;
-- registro oficial esperado;
-- registro localizado y estado: preservado, localizado, parcial o no localizado;
-- normas aplicables;
-- cronología;
-- personas y función probada;
-- contradicciones;
-- referencias externas;
-- preguntas abiertas.
+| Nivel | Requisito | Formulación permitida |
+|---|---|---|
+| Acción directa | Firma, voz, voto nominal, orden, presentación o ejecución visible | “firmó”, “anunció”, “presentó”, “ordenó” |
+| Autoría colegiada | Documento del órgano colegiado más firma, voto o identificación de integrantes decisores | “participó en la decisión colegiada” |
+| Autoridad y supervisión | Cargo y competencia funcional acreditados durante el periodo, sin prueba del acto individual | “era autoridad responsable del área”; no “decidió” |
+| Responsabilidad institucional | El acto u omisión corresponde al órgano, pero el ejecutor individual no está identificado | Se atribuye al órgano y se declara la autoría individual no determinada |
 
-### Paso 4 - Adquirir y preservar
+No basta la presencia en una lista de cargos. No se convierten afectados, víctimas, candidatos o solicitantes en responsables.
 
-Conservar el archivo original sin editar. Para páginas o publicaciones audiovisuales, registrar URL, fecha y hora UTC, plataforma, título, autor institucional, formato y, cuando sea viable, captura WARC o copia del archivo servido.
+## 7. Protocolo para documentos ausentes
 
-Calcular SHA-256 inmediatamente. Nunca reemplazar un archivo conservado bajo el mismo identificador. Una nueva descarga constituye otra captura.
+Una ausencia se publica únicamente con cuatro datos:
 
-El diseño sigue principios de integridad de NIST, procedencia de W3C PROV, empaquetado BagIt y conservación web WARC. El piloto usa archivos y manifiestos simples; BagIt/WARC se incorporarán cuando exista automatización estable.
+- documento esperado;
+- órgano que debía producirlo o custodiarlo;
+- evidencia de su existencia o del deber de producirlo; y
+- repositorios consultados y fecha de la última comprobación.
 
-### Paso 5 - Extraer afirmaciones atómicas
+La página del acto describe el vacío y su consecuencia probatoria. Las instrucciones editoriales, el historial de decisiones y las fuentes secundarias de búsqueda permanecen fuera de la página pública del expediente.
 
-Cada afirmación debe expresar una sola proposición y citar ubicación exacta. Separar:
+## 8. Redacción pública
 
-- contenido visible del documento;
-- inferencia obtenida al combinar documentos;
-- evaluación jurídica o técnica;
-- afirmación de un tercero.
+Cada frase de una página de evento o acto debe referirse al evento, al acto, a una fuente, a una norma, a una atribución o a un vacío probatorio. Se excluyen:
 
-No escribir “fraudulento”, “ilegal”, “inconstitucional” o equivalente sin exponer las premisas documentales y la norma o método usados.
+- respuestas al feedback editorial;
+- explicaciones sobre fuentes descartadas;
+- advertencias genéricas o fórmulas defensivas;
+- instrucciones internas de investigación; y
+- nombres de afectados bajo encabezados de responsabilidad.
 
-### Paso 6 - Comparar acto y norma
+Las calificaciones como fraude, ilegitimidad o inconstitucionalidad deben definir el criterio aplicado y exponer las premisas documentales. Cuando la intención no esté demostrada, se describe la conducta verificable y se limita la conclusión al defecto probado.
 
-Construir una tabla de cuatro columnas: requisito, fuente normativa, conducta observada y discrepancia. Verificar vigencia, numeración y texto de cada artículo. Una cita incorrecta del propio órgano se registra literalmente y se contrasta con la norma.
+## 9. Control de calidad
 
-### Paso 7 - Atribuir personas
+Antes de publicar se comprueba que:
 
-Se requiere al menos una fuente que conecte persona y acción. Registrar por separado:
+- cada archivo público está en el manifiesto y su hash coincide;
+- ninguna evidencia depende de un enlace externo;
+- cada cifra agregada puede recalcularse o se identifica como afirmación de su emisor;
+- las reproducciones no oficiales están rotuladas como tales;
+- las autoridades de una institución tienen fuente y periodo;
+- cada persona indexada tiene acción, nivel de atribución y evidencia;
+- los vacíos no se presentan como hechos demostrados;
+- no hay prensa ni observadores en “Evidencia preservada”; y
+- el expediente puede leerse sin conocer el proceso editorial.
 
-- **autoría directa**: firma, voto nominal, declaración o ejecución visible;
-- **autoridad decisoria**: competencia individual y evidencia de que decidió;
-- **participación colegiada**: integración del órgano más prueba de voto, firma o adhesión;
-- **inferencia explícita**: combinación de dos o más documentos; debe etiquetarse como inferencia;
-- **cargo solamente**: no basta para atribuir el acto.
+## 10. Correcciones
 
-Una lista de autoridades al pie de un comunicado permite afirmar que fueron identificadas por el documento, pero no presumir cómo votó cada una.
-
-### Paso 8 - Formular la conclusión del acto
-
-La conclusión debe responder: qué hizo el órgano, qué evidencia lo demuestra, qué requisito incumplió o qué contradicción presenta, qué personas están vinculadas y qué sigue sin conocerse.
-
-### Paso 9 - Formular la conclusión del evento
-
-La conclusión del evento debe poder reconstruirse exclusivamente desde los actos publicados. Las referencias externas se presentan después y no pueden ser la premisa oculta de la conclusión.
-
-### Paso 10 - Revisión antes de publicar
-
-Comprobar:
-
-- que todos los enlaces internos funcionan;
-- que cada archivo preservado coincide con su hash;
-- que cada cita señala página, párrafo, artículo, minuto o registro;
-- que no hay personas vinculadas solo por cargo;
-- que hechos, inferencias y referencias externas están diferenciados;
-- que los vacíos están declarados;
-- que el evento puede entenderse sin consultar una fuente externa.
-
-## 5. Estructura de conservación
-
-```text
-events/       expediente y lista de actos
-acts/         un registro estructurado por acto
-entities/     identidad estable y participaciones enlazadas
-documents/    registros oficiales venezolanos preservados
-references/   metadatos y enlaces de fuentes externas, sin mezclarlas con documentos oficiales
-schemas/      reglas de validación
-site/         versión pública
-```
-
-## 6. Correcciones y versiones
-
-Las correcciones no borran el historial. El expediente debe indicar la fecha, el campo afectado, el motivo, la evidencia nueva y el cambio realizado. Si se cuestiona la identidad o integridad de un documento, el dato afectado se marca como disputado hasta resolverlo.
-
-## 7. Regla de suficiencia
-
-Un acto puede publicarse incompleto si el vacío es relevante y está identificado, pero no puede presentarse como concluido. Una persona no se publica como interviniente hasta superar el umbral de atribución del paso 7.
+Las correcciones conservan el historial de Git. El cambio identifica fecha, registro afectado, evidencia nueva y motivo. Un archivo preservado nunca se modifica bajo el mismo identificador.

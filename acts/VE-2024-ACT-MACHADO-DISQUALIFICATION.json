@@ -1,18 +1,25 @@
 {
   "id": "VE-2024-ACT-MACHADO-DISQUALIFICATION",
   "event_id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
-  "title": "Ratificación de la inhabilitación de María Corina Machado",
+  "title": "Ratificación judicial de la inhabilitación administrativa",
   "date": "2024-01-26",
-  "issuer": ["VE-I-TSJ-SALA-POLITICO-ADMINISTRATIVA", "VE-I-CGR"],
-  "action": "La Sala Político-Administrativa mantuvo la inhabilitación administrativa por quince años que impidió postular a la ganadora de las primarias opositoras.",
+  "issuer": ["VE-I-TSJ-SPA"],
+  "action": "La Sala Político-Administrativa rechazó la reclamación del expediente 2023-0461 y mantuvo la inhabilitación de quince años atribuida a la Contraloría.",
   "status": "partial",
-  "official_records": [
-    {"id": "VE-2024-TSJ-SPA-00005", "title": "Sentencia 00005, expediente 2023-0461", "preservation_status": "missing"},
-    {"id": "VE-2021-CGR-01-00-000285", "title": "Resolución 01-00-000285 de la Contraloría", "preservation_status": "missing"}
+  "evidence_records": [
+    {"id":"VE-2024-TSJ-SENTENCE-00005","title":"Sentencia 00005, expediente 2023-0461","preservation_status":"missing","evidence_class":"A"},
+    {"id":"VE-2024-RNV-TSJ-MACHADO","title":"Reproducción estatal del dispositivo comunicado por el TSJ","preservation_status":"preserved","evidence_class":"C","sha256":"35bfe83a7b0676c2161ce12f263d6c3a067bc688aac01c30f406424bf92c02b2","file":"documents/VE-2024-RNV-TSJ-MACHADO-2024-01-26.html","locator":"dispositivo de la sentencia 00005"},
+    {"id":"VE-2022-GACETA-6696-TSJ-MAGISTRATES","title":"Gaceta Oficial 6.696: magistrados principales de la Sala","preservation_status":"preserved","evidence_class":"D","sha256":"39a42a26e491d38e6e2f5a9869466e48e52e7592bfd8d81bf5b87a6fb2a9d110","file":"documents/VE-2022-GACETA-6696-TSJ-MAGISTRATES.pdf","locator":"página 2"},
+    {"id":"EU-2025-DECISION-2025-49","title":"Decisión (PESC) 2025/49","preservation_status":"preserved","evidence_class":"E","sha256":"0cd4b944d9997becf47a3a78166b1fc0662dfa607f7596590113421ec0582165","file":"documents/EU-2025-DECISION-2025-49.pdf","locator":"anexo, entrada 59, página 4"}
   ],
   "normative_basis": [],
-  "persons": [{"id": "VE-P-MARIA-CORINA-MACHADO", "action": "Persona afectada por la inhabilitación", "attribution": "affected", "evidence": ["RNV-2024-01-26-TSJ-INHABILITACION"]}],
-  "findings": ["La decisión tuvo el efecto directo de excluir de la elección a la ganadora de las primarias opositoras.", "Sin los dos actos íntegros no puede cerrarse el análisis de procedimiento, motivación, notificación y competencia."],
-  "external_references": [],
-  "open_questions": ["Obtener la sentencia 00005 íntegra.", "Obtener la resolución de Contraloría y prueba de notificación y publicación."]
+  "persons": [
+    {"id":"VE-P-MALAQUIAS-GIL","action":"Participó en la decisión de enero de 2024 como presidente de la Sala, según la atribución formal de la Unión Europea.","attribution":"collegial","evidence":["EU-2025-DECISION-2025-49:p.4:entry-59"]}
+  ],
+  "findings": [
+    "El dispositivo preservado identifica el resultado del proceso, pero no expone el razonamiento ni permite reconstruir el expediente.",
+    "La Sala mantuvo una sanción administrativa cuyo acto original tampoco está disponible en el archivo.",
+    "La composición exacta que decidió el expediente no puede reconstruirse sin la sentencia íntegra; la participación de Malaquías Gil consta en una decisión oficial externa."
+  ],
+  "open_questions": ["Obtener la sentencia íntegra, integración decisoria, votos, escritos de las partes y expediente 2023-0461."]
 }

@@ -1,0 +1,9 @@
+{
+  "id": "VE-P-MALAQUIAS-GIL",
+  "name": "Malaquías Gil Rodríguez",
+  "name_variants": ["Malaquias Gil Rodriguez"],
+  "nationality": ["VE"],
+  "public_positions": [{"title":"Magistrado principal de la Sala Político-Administrativa","institution":"Tribunal Supremo de Justicia","start_date":"2022-04-27","sources":["VE-2022-GACETA-6696-TSJ-MAGISTRATES:p.2"]}],
+  "sources": [{"url":"https://apv-registro.github.io/archivo-publico-venezuela/documents/VE-2022-GACETA-6696-TSJ-MAGISTRATES.pdf","publisher":"Gaceta Oficial de la República Bolivariana de Venezuela","retrieved_at":"2026-08-08T15:04:32Z"},{"url":"https://apv-registro.github.io/archivo-publico-venezuela/documents/EU-2025-DECISION-2025-49.pdf","publisher":"Unión Europea","retrieved_at":"2026-08-08T15:04:32Z"}],
+  "identity_notes": "La Decisión (PESC) 2025/49, entrada 59, atribuye su participación en la decisión de enero de 2024 que mantuvo la inhabilitación."
+}

@@ -1,15 +1,32 @@
 {
   "id": "VE-2024-ACT-TSJ-VALIDATION",
   "event_id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
-  "title": "Validación judicial del resultado no verificable",
+  "title": "Convalidación judicial de un resultado no verificable",
   "date": "2024-08-22",
   "issuer": ["VE-I-TSJ-SALA-ELECTORAL"],
-  "action": "La Sala Electoral afirmó haber certificado material electoral, convalidó el resultado anunciado por el CNE y corroboró un supuesto ataque informático sin publicar la sentencia íntegra, evidencia, método ni informe pericial.",
+  "action": "La Sala Electoral afirmó haber certificado material electoral, convalidó el resultado anunciado por el CNE y corroboró un supuesto ataque informático sin publicar la sentencia íntegra, el material, el método ni el informe pericial.",
   "status": "partial",
-  "official_records": [{"id": "VE-2024-TSJ-ORDER-2024-08-10", "title": "Orden de continuación del peritaje", "preservation_status": "preserved", "sha256": "aa66ed7b796b02bfbf2a0efc6922b578fa28bc42a16e81ee2abd61f8bf0e4076"}, {"id": "VE-2024-TSJ-SENTENCE-031", "title": "Sentencia definitiva 031", "preservation_status": "missing"}, {"id": "VE-2024-CNE-COMUNICADO-2024-08-26", "title": "Comunicado del CNE que describe la sentencia", "preservation_status": "preserved", "sha256": "dea3b8c4b9a9b9e18a16f1dd9b00adc7492eb920b34eb0230885f285efd8c91a"}],
-  "normative_basis": [{"title": "Constitución de Venezuela", "locator": "artículo 297"}, {"title": "Ley Orgánica de Procesos Electorales", "locator": "artículos 114-125 y 164"}],
-  "persons": [{"id": "VE-P-NICOLAS-MADURO", "action": "Promovió la actuación judicial que solicitó revisar o verificar el resultado", "attribution": "direct", "evidence": ["VE-2024-TSJ-ORDER-2024-08-10"]}, {"id": "VE-P-ELVIS-AMOROSO", "action": "Encabezó la comparecencia del CNE y entregó recaudos a la Sala", "attribution": "direct", "evidence": ["VE-2024-TSJ-ORDER-2024-08-10:p.1"]}, {"id": "VE-P-CARYSLIA-RODRIGUEZ", "action": "Presidió la Sala y leyó públicamente la decisión", "attribution": "direct", "evidence": ["VE-2024-TSJ-READING-2024-08-22"]}],
-  "findings": ["No puede verificarse la controversia resuelta ni las premisas del fallo sin el recurso y la sentencia.", "El supuesto peritaje carece públicamente de material, método, expertos, muestra, trazabilidad y resultados.", "La convalidación judicial no sustituyó el deber del CNE de publicar el soporte desagregado."],
-  "external_references": [{"title": "Reglamento de Ejecución (UE) 2025/44", "locator": "anexo, entradas 56-58", "url": "http://data.europa.eu/eli/reg_impl/2025/44/oj"}],
-  "open_questions": ["Obtener sentencia 031, recurso inicial, autos, actas de audiencia, inventario de evidencia e informe pericial.", "Obtener evidencia técnica del supuesto ataque informático.", "Confirmar mediante registro oficial venezolano la intervención individual de todos los magistrados."]
+  "evidence_records": [
+    {"id":"VE-2024-TSJ-ORDER-2024-08-10","title":"Orden de continuación del peritaje","preservation_status":"preserved","evidence_class":"A","sha256":"aa66ed7b796b02bfbf2a0efc6922b578fa28bc42a16e81ee2abd61f8bf0e4076","file":"documents/VE-2024-TSJ-ORDER-2024-08-10.pdf","locator":"páginas 1-2"},
+    {"id":"VE-2024-TSJ-SENTENCE-031","title":"Sentencia definitiva 031","preservation_status":"missing","evidence_class":"A"},
+    {"id":"VE-2024-CNE-COMUNICADO-2024-08-26","title":"Comunicado oficial del CNE que reproduce los efectos de la sentencia","preservation_status":"preserved","evidence_class":"A","sha256":"dea3b8c4b9a9b9e18a16f1dd9b00adc7492eb920b34eb0230885f285efd8c91a","file":"documents/VE-2024-CNE-COMUNICADO-2024-08-26.pdf","locator":"página 1"},
+    {"id":"VE-2022-GACETA-6696-TSJ-MAGISTRATES","title":"Gaceta Oficial 6.696: magistrados principales de la Sala Electoral","preservation_status":"preserved","evidence_class":"D","sha256":"39a42a26e491d38e6e2f5a9869466e48e52e7592bfd8d81bf5b87a6fb2a9d110","file":"documents/VE-2022-GACETA-6696-TSJ-MAGISTRATES.pdf","locator":"página 2"},
+    {"id":"EU-2025-DECISION-2025-49","title":"Decisión (PESC) 2025/49","preservation_status":"preserved","evidence_class":"E","sha256":"0cd4b944d9997becf47a3a78166b1fc0662dfa607f7596590113421ec0582165","file":"documents/EU-2025-DECISION-2025-49.pdf","locator":"anexo, entradas 56-58"}
+  ],
+  "normative_basis": [
+    {"title":"Ley Orgánica de Procesos Electorales","locator":"artículos 114-125 y 164","record_id":"VE-2009-LOPRE"}
+  ],
+  "persons": [
+    {"id":"VE-P-NICOLAS-MADURO","action":"Promovió la actuación judicial para revisar o verificar el resultado.","attribution":"direct","evidence":["VE-2024-TSJ-ORDER-2024-08-10"]},
+    {"id":"VE-P-ELVIS-AMOROSO","action":"Compareció por el CNE y entregó recaudos a la Sala.","attribution":"direct","evidence":["VE-2024-TSJ-ORDER-2024-08-10:p.1"]},
+    {"id":"VE-P-CARYSLIA-RODRIGUEZ","action":"Presidía la Sala Electoral que emitió la sentencia 031; la decisión oficial de la UE le atribuye la declaración de la victoria proclamada.","attribution":"collegial","evidence":["VE-2022-GACETA-6696-TSJ-MAGISTRATES:p.2","EU-2025-DECISION-2025-49:entry-56"]},
+    {"id":"VE-P-FANNY-MARQUEZ","action":"La decisión oficial de la UE le atribuye participación en la certificación del resultado.","attribution":"collegial","evidence":["VE-2022-GACETA-6696-TSJ-MAGISTRATES:p.2","EU-2025-DECISION-2025-49:entry-57"]},
+    {"id":"VE-P-INOCENCIO-FIGUEROA","action":"La decisión oficial de la UE le atribuye apoyo a la certificación del resultado.","attribution":"collegial","evidence":["VE-2022-GACETA-6696-TSJ-MAGISTRATES:p.2","EU-2025-DECISION-2025-49:entry-58"]}
+  ],
+  "findings": [
+    "La orden preservada no identifica públicamente el material, muestra, expertos, software, cadena de custodia ni protocolo del peritaje.",
+    "El comunicado del CNE reproduce que la Sala certificó el material y convalidó los resultados; no aporta la sentencia ni el informe pericial.",
+    "La convalidación no hizo reproducible el resultado y no sustituyó la publicación de los documentos de totalización."
+  ],
+  "open_questions": ["Obtener sentencia 031, recurso inicial, autos, inventario de evidencia, actas de audiencia e informe pericial."]
 }

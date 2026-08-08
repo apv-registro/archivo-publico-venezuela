@@ -4,18 +4,15 @@
   "title": "APV event dossier",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "title", "period", "description", "question", "conclusion", "status", "acts", "official_evidence", "external_references", "open_questions"],
+  "required": ["id", "title", "period", "description", "question", "conclusion", "status", "acts", "evidence", "open_questions"],
   "properties": {
     "id": {"type": "string", "pattern": "^VE-[0-9]{4}-EVENT-[A-Z0-9-]+$"},
     "title": {"type": "string"},
-    "period": {"type": "object", "required": ["start", "end"], "properties": {"start": {"type": "string"}, "end": {"type": "string"}}},
-    "description": {"type": "string"},
-    "question": {"type": "string"},
-    "conclusion": {"type": "string"},
+    "period": {"type": "object", "additionalProperties": false, "required": ["start", "end"], "properties": {"start": {"type": "string"}, "end": {"type": "string"}}},
+    "description": {"type": "string"}, "question": {"type": "string"}, "conclusion": {"type": "string"},
     "status": {"enum": ["open", "documented", "disputed", "corrected"]},
     "acts": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
-    "official_evidence": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
-    "external_references": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "evidence": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
     "open_questions": {"type": "array", "items": {"type": "string"}}
   }
 }

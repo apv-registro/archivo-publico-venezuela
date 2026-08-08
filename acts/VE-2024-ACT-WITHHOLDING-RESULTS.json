@@ -1,15 +1,23 @@
 {
   "id": "VE-2024-ACT-WITHHOLDING-RESULTS",
   "event_id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
-  "title": "No publicación de actas y resultados mesa por mesa",
+  "title": "No publicación de resultados desagregados y documentos de totalización",
   "date": "2024-07-29/open",
   "issuer": ["VE-I-CNE"],
-  "action": "El CNE no publicó los documentos y datos desagregados necesarios para verificar la totalización y no se ha localizado la publicación íntegra exigida en Gaceta Electoral.",
+  "action": "El CNE no publicó los datos por mesa ni los documentos de totalización necesarios para verificar los resultados anunciados.",
   "status": "partial",
-  "official_records": [{"id": "VE-2024-CNE-COMUNICADO-2024-08-26", "title": "Comunicado oficial del CNE", "preservation_status": "preserved", "sha256": "dea3b8c4b9a9b9e18a16f1dd9b00adc7492eb920b34eb0230885f285efd8c91a"}],
-  "normative_basis": [{"title": "Ley Orgánica de Procesos Electorales", "locator": "artículos 120 y 125"}, {"title": "Reglamento General de la LOPRE", "locator": "artículos 382, 385 y 395"}],
+  "evidence_records": [
+    {"id":"VE-2024-CNE-COMUNICADO-2024-08-26","title":"Comunicado oficial del CNE","preservation_status":"preserved","evidence_class":"A","sha256":"dea3b8c4b9a9b9e18a16f1dd9b00adc7492eb920b34eb0230885f285efd8c91a","file":"documents/VE-2024-CNE-COMUNICADO-2024-08-26.pdf","locator":"páginas 1-2"},
+    {"id":"VE-2009-LOPRE","title":"Ley Orgánica de Procesos Electorales","preservation_status":"preserved","evidence_class":"D","sha256":"9d41305f3a1b5be6426b09ff4d4210f733544dcda549875fc2c0a15da4bd6fde","file":"documents/VE-2009-LOPRE.pdf","locator":"artículos 120 y 125"}
+  ],
+  "normative_basis": [
+    {"title":"Ley Orgánica de Procesos Electorales","locator":"artículos 120 y 125","record_id":"VE-2009-LOPRE"}
+  ],
   "persons": [],
-  "findings": ["El comunicado promete publicar resultados, pero cita el artículo 155 LOPRE, que trata sobre electores con discapacidad; la publicación está en el artículo 125.", "La lista de autoridades al pie del comunicado no demuestra el voto individual de cada una."],
-  "external_references": [],
-  "open_questions": ["Localizar Gaceta Electoral, acta de totalización, boletín final, hojas complementarias y resultados mesa por mesa.", "Determinar decisiones y responsabilidades individuales sobre la publicación."]
+  "findings": [
+    "El comunicado del 26 de agosto afirmó que publicaría resultados definitivos, pero no contiene los resultados por mesa ni los documentos de totalización.",
+    "El comunicado invoca el artículo 155 para la publicación; el artículo 155 regula derechos de electores con discapacidad y el artículo 125 regula la publicación en Gaceta Electoral.",
+    "La responsabilidad institucional corresponde al CNE; el registro preservado no determina la decisión individual de retener o no publicar los documentos."
+  ],
+  "open_questions": ["Localizar la Gaceta Electoral, el acta de totalización, el boletín final, las hojas complementarias y los resultados por mesa."]
 }

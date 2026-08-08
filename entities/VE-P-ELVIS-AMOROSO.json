@@ -1,9 +1,6 @@
 {
-  "id": "VE-P-ELVIS-AMOROSO",
-  "name": "Elvis Eduardo Hidrobo Amoroso",
-  "name_variants": ["Elvis Amoroso"],
-  "nationality": ["VE"],
-  "public_positions": [{"title": "Presidente del Consejo Nacional Electoral", "institution": "Consejo Nacional Electoral", "sources": ["Comunicado oficial CNE de 26 de agosto de 2024, p. 2"]}],
-  "sources": [{"url": "https://rnv.gob.ve/cne-ratifica-contundente-victoria-de-nicolas-maduro-con-mas-de-6-millones-400-mil-votos/", "publisher": "Radio Nacional de Venezuela", "retrieved_at": "2026-08-08T00:00:00Z"}],
-  "identity_notes": "Vinculado directamente al anuncio de resultados y a la entrega de recaudos al TSJ."
+  "id":"VE-P-ELVIS-AMOROSO","name":"Elvis Eduardo Hidrobo Amoroso","name_variants":["Elvis Amoroso"],"nationality":["VE"],
+  "public_positions":[{"title":"Presidente del Consejo Nacional Electoral y de la Junta Nacional Electoral","institution":"Consejo Nacional Electoral","start_date":"2023-08-25","sources":["VE-2023-CIUDADCCS-CNE-DIRECTIVE"]}],
+  "sources":[{"url":"https://apv-registro.github.io/archivo-publico-venezuela/documents/VE-2023-CIUDADCCS-CNE-DIRECTIVE-2023-08-25.html","publisher":"Ciudad CCS","retrieved_at":"2026-08-08T15:04:32Z"},{"url":"https://apv-registro.github.io/archivo-publico-venezuela/documents/VE-2024-RNV-CNE-SECOND-BULLETIN-2024-08-02.html","publisher":"Radio Nacional de Venezuela","retrieved_at":"2026-08-08T15:04:32Z"}],
+  "identity_notes":"Leyó y atribuyó públicamente los resultados y compareció por el CNE ante la Sala Electoral."
 }

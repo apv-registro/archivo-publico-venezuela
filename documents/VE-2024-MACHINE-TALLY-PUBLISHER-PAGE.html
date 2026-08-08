@@ -1,0 +1,556 @@
+<!-- views/index.php -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KRV97FSJ');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados Elecciones Presidenciales</title>
+    
+    <meta property="og:title" content="Resultados Elecciones Presidenciales: NACIONAL">
+    <meta property="og:description" content="Resultados (Auditoría/Actualización - 5 de Agosto, 07:00pm Caracas): Edmundo González 7.443.584, Nicolás Maduro 3.385.155, otros 273.063">
+    <meta property="og:image" content="https://resultadosconvzla.com/assets/convzla.jpg">
+    <meta property="og:url" content="https://resultadosconvzla.com/">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Resultados Elecciones Presidenciales: NACIONAL">
+    <meta name="twitter:description" content="Resultados (Auditoría/Actualización - 5 de Agosto, 07:00pm Caracas): Edmundo González 7.443.584, Nicolás Maduro 3.385.155, otros 273.063">
+    <meta name="twitter:image" content="https://resultadosconvzla.com/assets/convzla.jpg">
+    <meta name="twitter:url" content="https://resultadosconvzla.com/">
+    <meta name="twitter:site" content="@ConVzlaComando">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        .counter-number {
+            font-size: 4rem;
+        }
+        .titulo {
+            font-family: "Bebas Neue", sans-serif;
+            transform: uppercase;
+            font-size: 3rem;
+            padding: 1rem 0;
+        }
+        .scrollable-container {
+            height: 80vh; /* Ajusta esta altura según tus necesidades */
+            overflow-y: auto;
+        }
+
+        #acta {
+            display: none ;
+        }
+
+        #descarga-csv {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 0.25rem;
+        }
+
+        @media (max-width: 767.98px) {
+            #descarga-csv .col-12 {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRV97FSJ"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Header -->
+<header class="text-white text-center" style="background: #262e63;">
+    <div class="container">
+        <a href="/"><img src="/assets/header.png" alt="Logo" class="img-fluid"></a>
+    </div>
+</header>
+
+<main class="flex-grow-1">
+
+    
+<!-- Comparison Bar Component -->
+<div class="container my-4">
+
+    <div class="row align-items-start">
+
+        <div class="col-md-12" id="tabla">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <h2 class="titulo mb-0">Resultados - Nacional</h2>
+                <div class="text-end">Actas digitalizadas: 25.575 (85,18%).
+                </div>
+            </div>
+            <div class="col-12 d-flex">
+                <div class="text-end">Auditoría/Actualización: <strong>03 de enero 2025, 10:00pm Caracas</strong>
+                </div>
+            </div>
+            <div class="col-12 mt-5">
+                <div class="my-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3>Edmundo González</h3>
+                        <h4>7.443.584 votos</h4>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="me-auto text-end">
+                            <img src="/assets/edmundo.png" alt="Edmundo" class="rounded-circle me-3" width="75" height="75">
+                        </div>
+                        <div class="progress flex-grow-1" style="height: 80px;">
+                            <div class="progress-bar bg-primary d-flex align-items-center justify-content-center" role="progressbar" style="width: 67%; padding: 5px;" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+                                <span class="text-white fw-bold h5">67%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3>Nicolás Maduro</h3>
+                        <h4>3.385.155 votos</h4>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="me-auto text-end">
+                            <img src="/assets/maduro.png" alt="Maduro" class="rounded-circle me-3" width="75" height="75">
+                        </div>
+                        <div class="progress flex-grow-1" style="height: 80px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                <span class="text-white fw-bold h5">30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3>Otros</h3>
+                        <h4>273.063 votos</h4>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="me-auto text-end">
+                            <img src="/assets/other.png" alt="Edmundo" class="rounded-circle me-3" width="75" height="75">
+                        </div>
+                        <div class="progress flex-grow-1" style="height: 80px;">
+                            <div class="progress-bar d-flex align-items-center justify-content-center" role="progressbar" style="width: 2%; padding: 5px; background-color: #343a40;" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+                                <span class="text-white fw-bold h5">2%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    
+    <div class="container my-4">
+        <h2 class="titulo">Información General (*)
+        </h2>
+    <div class="row text-center">
+            <div class="col-md-6">
+                <div>
+                    <h5>Mesas Totales</h5>
+                    <div class="counter-number font-weight-bold" style="color: #000475;">30.026</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <h5>Mesas Transmitidas</h5>
+                    <div class="counter-number font-weight-bold" style="color: #0EBDEA;">25.575</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <h5>Electores Totales</h5>
+                    <div class="counter-number font-weight-bold" style="color: #000475;">21.321.783</div>
+                </div>
+            </div>
+            <div class="col-md-6    ">
+                <div>
+                    <h5>Electores en Mesas Transmitidas</h5>
+                    <div class="counter-number font-weight-bold" style="color: #0EBDEA;">18.504.975</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div>
+                    <h5>Votantes en Mesas Transmitidas</h5>
+                    <div class="counter-number font-weight-bold" style="color: #0EBDEA;">11.103.043</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div>
+                    <h5>Participación</h5>
+                    <div class="counter-number font-weight-bold" style="color: #000475;">60,00%</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div>
+                    <h5>Electores en Mesas No Transmitidas</h5>
+                    <div class="counter-number font-weight-bold" style="color: #0EBDEA;">2.816.808</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container my-4">
+            <p class="text-center">(*) La diferencia de votos obtenidos entre Edmundo González y Nicolás Maduro 
+            <strong>(4.058.429)</strong> es mayor que la cantidad total de electores que votan en las mesas que faltan por procesar <strong>(2.816.808)</strong>.</p>
+        </div>    <div class="container my-4 text-center">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-12 col-md-6">
+                <div class="card text-center"> 
+                    <div class="card-body">
+                        <h5 class="titulo">Buscar por Cédula</h5>
+                        <form id="searchCedula" onsubmit="handleFormSubmit(event)" class="form-inline">
+                            <div class="form-group mb-3 text-center mx-auto" style="width:70%;">
+                                <input type="text" 
+                                       class="form-control text-center"  
+                                       id="cedulaField" 
+                                       name="cedulaField" 
+                                       placeholder="Cédula" 
+                                       required>
+                                <small id="emailHelp" class="form-text text-muted">
+                                    Se mostrará el acta perteneciente al centro de votación
+                                </small>
+                            </div>
+                            <p class="card-text">
+                                Al introducir su Cédula de Identidad en el buscador verá el resultado 
+                                de la mesa de votación donde está inscrito para votar.
+                            </p>
+                            <p class="card-text">
+                                <strong>Esto no significa que usted haya ejercido el derecho al voto.</strong>
+                            </p>
+                            <p class="card-text">
+                                En un esfuerzo de absoluta transparencia, el buscador arroja el resultado 
+                                de su mesa según el Registro Electoral.
+                            </p>
+                            <button type="submit" class="btn btn-primary">Buscar</button>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Content -->
+<main class="container my-4">
+    <h2 class="titulo">estados</h2>
+    <div class="table-responsive">
+        <table class="table table-striped" id="dependencyTable">
+            <tbody id="dependencyTableBody">
+
+                                            <tr>
+                    <td>EDO. DELTA AMAC</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 193 (78%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/23" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO.NVA.ESPARTA</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 512 (95%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/15" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. FALCON</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 1,116 (94%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 94%;" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/9" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. APURE</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 537 (89%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 89%;" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/3" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. MERIDA</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 923 (97%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 97%;" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/12" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. BOLIVAR</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 1,185 (76%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 76%;" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/6" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. ZULIA</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 2,874 (87%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 87%;" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/21" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. CARABOBO</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 1,414 (69%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 69%;" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/7" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>DTTO. CAPITAL</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 1,735 (77%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 77%;" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/1" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. LA GUAIRA</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 340 (82%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 82%;" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/24" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. TACHIRA</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 1,229 (97%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 97%;" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/18" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. GUARICO</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 758 (89%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 89%;" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/10" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. ARAGUA</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 1,525 (94%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 94%;" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/4" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. TRUJILLO</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 909 (93%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 93%;" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/19" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. MIRANDA</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 2,355 (79%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 79%;" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/13" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. BARINAS</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 963 (94%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 94%;" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/5" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. AMAZONAS</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 108 (54%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 54%;" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/22" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. PORTUGUESA</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 988 (91%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 91%;" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/16" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. ANZOATEGUI</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 1,342 (86%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 86%;" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/2" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. SUCRE</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 1,047 (95%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/17" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. LARA</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 1,634 (81%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 81%;" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/11" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. YARACUY</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 703 (93%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 93%;" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/20" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. MONAGAS</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 767 (77%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 77%;" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/14" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+                                            <tr>
+                    <td>EDO. COJEDES</td>
+                    <td class="text-end">
+                        <span>Actas digitalizadas 418 (93%)</span>
+                        <div class="progress" style="width: 100px; display: inline-block; vertical-align: middle; height: 10px; margin-left: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 93%;" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                        <a href="/estado/8" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var tableBody = document.getElementById("dependencyTableBody");
+        var rows = Array.from(tableBody.rows);
+
+        rows.sort(function(a, b) {
+            var nameA = a.cells[0].innerText.toUpperCase();
+            var nameB = b.cells[0].innerText.toUpperCase();
+            return nameA.localeCompare(nameB);
+        });
+
+        rows.forEach(function(row) {
+            tableBody.appendChild(row);
+        });
+    });
+</script>
+</main>
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>Resultados Elecciones Presidenciales - Venezuela 2024 ©
+        </p>
+        <p>
+            <a href="https://static.resultadosconvzla.com/RESULTADOS_2024_CSV_V3.csv" class="btn btn-success" target="_self" rel="noopener noreferrer">Descargar Resultados Electorales V3</a>
+        </p>
+        <p>Auditoría/Actualización: <strong>03 de enero 2025, 10:00pm Caracas</strong></p>
+        <p>Hash de Integridad SHA256: <code>d24f65eb695617a4e9b1f51ca0f47609b2be87836fc23107ad0bb08e7c6b00d7</code></p>
+        <p>
+            <a href="https://static.resultadosconvzla.com/RESULTADOS_2024_CSV_V2.csv" class="btn btn-primary" target="_self" rel="noopener noreferrer">Descargar Resultados Electorales V2</a>
+        </p>
+        <p>Auditoría/Actualización: <strong>5 de Agosto 2024, 07:00pm Caracas</strong></p>
+        <p>Hash de Integridad SHA256: <code>75d8d93a95b3f429f0b94bee9d02b19f2ef298f6cb05ecbdc986a5b7725e2574</code></p>
+        <p>
+            <a href="https://static.resultadosconvzla.com/RESULTADOS_2024_CSV_V1.csv" class="btn btn-secondary" target="_self" rel="noopener noreferrer">Descargar Resultados Electorales V1</a>
+        </p>
+        <p>Auditoría/Actualización: <strong>1ro. de Agosto 2024, 11.00pm Caracas</strong></p>
+        <p>Hash de Integridad SHA256: <code>fd2712796bf8ec77dfe02e07cd864882c93f4079238c2d21b822b7b9a999f8ea</code></p>
+        <p>
+            <a href="https://static.resultadosconvzla.com/TablaMesaEleccionPresidencial2024.csv" class="btn btn-success" target="_self" rel="noopener noreferrer">Descargar Electores por Mesa 28J-2024</a>
+        </p>
+        <p>Archivo cargado: <strong>03 de enero 2025, 10:00pm Caracas</strong></p>
+        <p>Hash de Integridad SHA256: <code>8cb4a66efe3edece04783ce4507df2261275614ba99cb395eff68a588c6a6fbd</code></p>
+    </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<script>
+function handleFormSubmit(event) {
+const validateInput = (input) => {
+    const regex = /^V?\d+$/i;
+    if (!regex.test(input)) {
+        return 'error';
+    }
+    
+    if (input.slice(0, 1).toLowerCase() !== 'v') {
+        input = 'V' + input;
+    }
+
+    return input;
+};
+
+
+    event.preventDefault();
+    const form = document.getElementById('searchCedula');
+    let inputField = form.querySelector('#cedulaField').value;
+    
+    inputField = validateInput(inputField);   
+
+    if (inputField !== 'error'){
+	window.location.href = `/documento/${inputField}`;
+    }
+}
+</script>
+
+
+</body>
+</html>

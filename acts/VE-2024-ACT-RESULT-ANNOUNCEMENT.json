@@ -1,15 +1,27 @@
 {
   "id": "VE-2024-ACT-RESULT-ANNOUNCEMENT",
   "event_id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
-  "title": "Anuncio y ratificación de resultados sin soporte desagregado",
+  "title": "Atribución oficial de la victoria sin soporte desagregado",
   "date": "2024-07-29/2024-08-02",
   "issuer": ["VE-I-CNE"],
-  "action": "El presidente del CNE anunció dos conjuntos de totales nacionales que atribuían la victoria a Nicolás Maduro sin publicar el soporte mesa por mesa, el acta de totalización ni las hojas complementarias.",
+  "action": "El presidente del CNE anunció dos totales nacionales que atribuían la victoria a Nicolás Maduro sin publicar datos por mesa, acta de totalización ni hojas complementarias.",
   "status": "partial",
-  "official_records": [{"id": "VE-2024-CNE-FIRST-BULLETIN", "title": "Primer boletín audiovisual", "preservation_status": "located", "source_url": "https://www.youtube.com/watch?v=YaFtaEJgokM"}, {"id": "VE-2024-CNE-SECOND-BULLETIN", "title": "Segundo boletín del 2 de agosto", "preservation_status": "located", "source_url": "https://rnv.gob.ve/cne-ratifica-contundente-victoria-de-nicolas-maduro-con-mas-de-6-millones-400-mil-votos/"}],
-  "normative_basis": [{"title": "Ley Orgánica de Procesos Electorales", "locator": "artículos 114, 116, 120 y 123"}, {"title": "Reglamento General de la LOPRE", "locator": "artículos 381-386 y 392"}],
-  "persons": [{"id": "VE-P-ELVIS-AMOROSO", "action": "Leyó y atribuyó públicamente ambos resultados como presidente del CNE", "attribution": "direct", "evidence": ["VE-2024-CNE-FIRST-BULLETIN", "VE-2024-CNE-SECOND-BULLETIN"]}],
-  "findings": ["Las cifras no pueden reproducirse desde documentos oficiales publicados.", "El soporte exigible para conectar actas, totalización y proclamación no fue publicado."],
-  "external_references": [],
-  "open_questions": ["Preservar grabaciones originales completas.", "Obtener acta de totalización, boletín final y hojas complementarias."]
+  "evidence_records": [
+    {"id":"VE-2024-CNE-FIRST-BULLETIN-COPY","title":"Copia audiovisual contemporánea del primer boletín","preservation_status":"preserved","evidence_class":"C","sha256":"e5f7249ab555026633b7f879e69dd4f2f1cf69fff6ef71cd40eca672f1f04f19","file":"documents/VE-2024-CNE-FIRST-BULLETIN-CONTEMPORARY-COPY.mp4","locator":"duración 07:04"},
+    {"id":"VE-2024-RNV-CNE-SECOND-BULLETIN","title":"Reproducción estatal del segundo boletín","preservation_status":"preserved","evidence_class":"C","sha256":"c3fdd7a0a0fc7733295a86e5a005452bbfd37c8d98038c66523cc456188e9f57","file":"documents/VE-2024-RNV-CNE-SECOND-BULLETIN-2024-08-02.html","locator":"cifras anunciadas el 2 de agosto"},
+    {"id":"VE-2024-MACHINE-TALLY-TRANSCRIPTION-V3","title":"Transcripción V3 de 25.575 actas de máquina","preservation_status":"partial","evidence_class":"B","sha256":"d24f65eb695617a4e9b1f51ca0f47609b2be87836fc23107ad0bb08e7c6b00d7","file":"documents/VE-2024-MACHINE-TALLY-TRANSCRIPTION-V3.csv","locator":"25.575 filas y enlaces a imágenes"}
+  ],
+  "normative_basis": [
+    {"title":"Ley Orgánica de Procesos Electorales","locator":"artículos 108-125","record_id":"VE-2009-LOPRE"}
+  ],
+  "persons": [
+    {"id":"VE-P-ELVIS-AMOROSO","action":"Leyó y atribuyó públicamente los resultados como presidente del CNE.","attribution":"direct","evidence":["VE-2024-CNE-FIRST-BULLETIN-COPY","VE-2024-RNV-CNE-SECOND-BULLETIN"]}
+  ],
+  "findings": [
+    "El primer anuncio atribuyó 5.150.092 votos a Nicolás Maduro y 4.445.978 a Edmundo González; el segundo, 6.408.844 y 5.326.104, respectivamente.",
+    "El CNE no publicó el soporte desagregado necesario para reproducir ninguno de los dos totales.",
+    "La transcripción V3 suma 7.443.584 votos para González y 3.385.155 para Maduro; su diferencia de 4.058.429 supera los 2.816.808 electores de las mesas no incluidas que declara la página de procedencia.",
+    "La base preservada es una transcripción de una parte participante y las imágenes enlazadas no están preservadas íntegramente en este repositorio."
+  ],
+  "open_questions": ["Obtener los documentos originales de totalización del CNE y preservar las imágenes de actas enlazadas por la base V3."]
 }

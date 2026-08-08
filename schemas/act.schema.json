@@ -4,7 +4,7 @@
   "title": "APV act dossier",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "event_id", "title", "date", "issuer", "action", "status", "official_records", "normative_basis", "findings", "open_questions"],
+  "required": ["id", "event_id", "title", "date", "issuer", "action", "status", "evidence_records", "normative_basis", "persons", "findings", "open_questions"],
   "properties": {
     "id": {"type": "string", "pattern": "^VE-[0-9]{4}-ACT-[A-Z0-9-]+$"},
     "event_id": {"type": "string"},
@@ -13,16 +13,38 @@
     "issuer": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
     "action": {"type": "string", "minLength": 20},
     "status": {"enum": ["open", "partial", "documented", "disputed"]},
-    "official_records": {"type": "array", "items": {"$ref": "#/$defs/record"}},
+    "evidence_records": {"type": "array", "items": {"$ref": "#/$defs/record"}},
     "normative_basis": {"type": "array", "items": {"$ref": "#/$defs/citation"}},
     "persons": {"type": "array", "items": {"$ref": "#/$defs/person_link"}},
     "findings": {"type": "array", "items": {"type": "string"}, "minItems": 1},
-    "external_references": {"type": "array", "items": {"$ref": "#/$defs/citation"}},
-    "open_questions": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+    "open_questions": {"type": "array", "items": {"type": "string"}}
   },
   "$defs": {
-    "record": {"type": "object", "required": ["id", "title", "preservation_status"], "properties": {"id": {"type": "string"}, "title": {"type": "string"}, "preservation_status": {"enum": ["preserved", "located", "partial", "missing"]}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "source_url": {"type": "string"}}},
-    "citation": {"type": "object", "required": ["title", "locator"], "properties": {"title": {"type": "string"}, "locator": {"type": "string"}, "url": {"type": "string"}}},
-    "person_link": {"type": "object", "required": ["id", "action", "attribution", "evidence"], "properties": {"id": {"type": "string"}, "action": {"type": "string"}, "attribution": {"enum": ["direct", "decisory", "collegial", "explicit_inference", "affected"]}, "evidence": {"type": "array", "items": {"type": "string"}, "minItems": 1}}}
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "preservation_status", "evidence_class"],
+      "properties": {
+        "id": {"type": "string"}, "title": {"type": "string"},
+        "preservation_status": {"enum": ["preserved", "partial", "missing"]},
+        "evidence_class": {"enum": ["A", "B", "C", "D", "E"]},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "file": {"type": "string"}, "source_url": {"type": "string"}, "locator": {"type": "string"}
+      }
+    },
+    "citation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["title", "locator"],
+      "properties": {"title": {"type": "string"}, "locator": {"type": "string"}, "record_id": {"type": "string"}}
+    },
+    "person_link": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "action", "attribution", "evidence"],
+      "properties": {
+        "id": {"type": "string"}, "action": {"type": "string"},
+        "attribution": {"enum": ["direct", "collegial", "authority_supervision"]},
+        "evidence": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+      }
+    }
   }
 }

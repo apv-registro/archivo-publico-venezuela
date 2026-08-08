@@ -1,0 +1,22 @@
+{
+  "source_record": "VE-2024-MACHINE-TALLY-TRANSCRIPTION-V3",
+  "source_sha256": "d24f65eb695617a4e9b1f51ca0f47609b2be87836fc23107ad0bb08e7c6b00d7",
+  "encoding": "Windows-1252 compatible",
+  "rows": 25575,
+  "unique_center_table_pairs": 25575,
+  "unique_act_image_urls": 25575,
+  "sums": {
+    "valid_votes": 11101802,
+    "null_votes": 1241,
+    "edmundo_gonzalez": 7443584,
+    "nicolas_maduro": 3385155,
+    "other_candidates": 273063
+  },
+  "valid_vote_reconciliation_difference": 0,
+  "gonzalez_minus_maduro": 4058429,
+  "limitations": [
+    "El CSV es una transcripción publicada por una organización participante, no una base publicada por el CNE.",
+    "El repositorio todavía no conserva las 25.575 imágenes enlazadas por el CSV.",
+    "La suma verifica la coherencia interna del CSV; no autentica por sí sola cada imagen ni cada transcripción."
+  ]
+}

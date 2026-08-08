@@ -1,13 +1,33 @@
 {
   "id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
   "title": "Elección presidencial de Venezuela de 2024",
-  "period": {"start": "2024-01-26", "end": "open"},
-  "description": "Proceso para elegir la Presidencia para 2025-2031 y conjunto de decisiones públicas que afectaron la competencia, la emisión y publicación de resultados y su revisión judicial.",
-  "question": "¿Puede la atribución oficial de la victoria a Nicolás Maduro reconstruirse mediante un procedimiento verificable conforme a las reglas electorales venezolanas?",
-  "conclusion": "La atribución oficial no está sustentada por evidencia pública reproducible y contradice el conjunto disponible de actas emitidas por las máquinas del CNE. El expediente califica como fraudulenta la atribución oficial del resultado.",
+  "period": {"start": "2021-09-16", "end": "open"},
+  "description": "Expediente de las decisiones y omisiones que restringieron postulaciones, produjeron una atribución oficial de victoria sin soporte público desagregado y la convalidaron judicialmente.",
+  "question": "¿Puede reconstruirse y verificarse la atribución oficial de la victoria presidencial desde los registros que debían producir el CNE y el TSJ?",
+  "conclusion": "No. El CNE atribuyó la victoria a Nicolás Maduro sin publicar los datos por mesa ni los documentos de totalización necesarios para reproducirla. La transcripción preservada de 25.575 actas emitidas por máquinas del CNE produce el resultado contrario. El TSJ convalidó la atribución sin publicar la sentencia íntegra, el material examinado ni el método del peritaje. El expediente califica la atribución oficial como fraudulenta.",
   "status": "open",
-  "acts": ["VE-2024-ACT-MACHADO-DISQUALIFICATION", "VE-2024-ACT-YORIS-NOMINATION-BLOCK", "VE-2024-ACT-RESULT-ANNOUNCEMENT", "VE-2024-ACT-WITHHOLDING-RESULTS", "VE-2024-ACT-TSJ-VALIDATION"],
-  "official_evidence": ["VE-2024-CNE-COMUNICADO-2024-08-26", "VE-2024-TSJ-ORDER-2024-08-10"],
-  "external_references": ["UN-2024-VENEZUELA-INTERIM", "CC-2025-VENEZUELA-FINAL", "EU-2024-STATEMENT-659-24"],
-  "open_questions": ["Localizar los documentos de totalización y resultados oficiales mesa por mesa.", "Localizar la sentencia 031 y su expediente.", "Completar los registros oficiales de inhabilitación y postulaciones."]
+  "acts": [
+    "VE-2021-ACT-CGR-MACHADO-DISQUALIFICATION",
+    "VE-2024-ACT-MACHADO-DISQUALIFICATION",
+    "VE-2024-ACT-YORIS-NOMINATION-BLOCK",
+    "VE-2024-ACT-RESULT-ANNOUNCEMENT",
+    "VE-2024-ACT-WITHHOLDING-RESULTS",
+    "VE-2024-ACT-TSJ-VALIDATION"
+  ],
+  "evidence": [
+    "VE-2024-RNV-TSJ-MACHADO",
+    "VE-2024-PUD-YORIS-POST",
+    "VE-2024-CNE-FIRST-BULLETIN-COPY",
+    "VE-2024-RNV-CNE-SECOND-BULLETIN",
+    "VE-2024-MACHINE-TALLY-TRANSCRIPTION-V3",
+    "VE-2024-CNE-COMUNICADO-2024-08-26",
+    "VE-2024-TSJ-ORDER-2024-08-10"
+  ],
+  "open_questions": [
+    "Obtener la resolución 01-00-000285 de la Contraloría y la sentencia 00005 íntegra.",
+    "Obtener registros técnicos y decisiones del sistema de postulaciones.",
+    "Obtener acta de totalización, hojas complementarias, boletín final y resultados oficiales por mesa.",
+    "Preservar las imágenes de las 25.575 actas enlazadas por la transcripción V3.",
+    "Obtener la sentencia 031, el expediente y el informe pericial íntegros."
+  ]
 }
