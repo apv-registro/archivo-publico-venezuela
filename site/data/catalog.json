@@ -1,0 +1,58 @@
+[
+  {
+    "type": "case",
+    "title": "Sentencia 031 sobre la elección presidencial de 2024",
+    "href": "cases/VE-2024-TSJ-ELECTION-VALIDATION.html",
+    "summary": "El CNE afirmó que la Sala Electoral certificó el material peritado y convalidó los resultados. El texto íntegro de la sentencia final aún no ha sido localizado por el archivo.",
+    "date": "2024-08-22",
+    "keywords": ["TSJ", "Sala Electoral", "CNE", "elecciones 2024", "sentencia 031", "AA70-E-2024-000034"]
+  },
+  {
+    "type": "institution",
+    "title": "Sala Electoral del Tribunal Supremo de Justicia",
+    "summary": "Órgano que dictó la sentencia 031 del 22 de agosto de 2024.",
+    "date": "2024-08-22",
+    "keywords": ["TSJ", "Tribunal Supremo", "Sala Electoral"]
+  },
+  {
+    "type": "institution",
+    "title": "Consejo Nacional Electoral",
+    "summary": "Publicó el comunicado del 26 de agosto que describe la sentencia 031 y enumera a sus autoridades.",
+    "date": "2024-08-26",
+    "keywords": ["CNE", "Poder Electoral", "comunicado"]
+  },
+  {
+    "type": "person",
+    "title": "Caryslia Beatriz Rodríguez Rodríguez",
+    "summary": "Presidenta del TSJ y de la Sala Electoral; función e intervención descritas en el Reglamento de Ejecución (UE) 2025/44.",
+    "date": "2025-01-10",
+    "keywords": ["Caryslia Rodríguez", "TSJ", "Sala Electoral", "UE 2025/44"]
+  },
+  {
+    "type": "person",
+    "title": "Fanny Beatriz Márquez Cordero",
+    "summary": "Vicepresidenta del TSJ y de la Sala Electoral; participación descrita en el Reglamento de Ejecución (UE) 2025/44.",
+    "date": "2025-01-10",
+    "keywords": ["Fanny Márquez", "TSJ", "Sala Electoral", "UE 2025/44"]
+  },
+  {
+    "type": "person",
+    "title": "Inocencio Antonio Figueroa Arizaleta",
+    "summary": "Magistrado del TSJ; apoyo a la certificación descrito en el Reglamento de Ejecución (UE) 2025/44.",
+    "date": "2025-01-10",
+    "keywords": ["Inocencio Figueroa", "TSJ", "UE 2025/44"]
+  },
+  {"type":"person","title":"Elvis Amoroso","summary":"Presidente del CNE, listado en el comunicado oficial del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE","Poder Electoral"]},
+  {"type":"person","title":"Carlos Quintero","summary":"Vicepresidente del CNE, listado en el comunicado oficial del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE","Poder Electoral"]},
+  {"type":"person","title":"Rosalba Gil","summary":"Rectora electoral, listada en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
+  {"type":"person","title":"Acme Nogal","summary":"Rectora electoral, listada en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
+  {"type":"person","title":"Conrado Pérez","summary":"Rector electoral, listado en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
+  {"type":"person","title":"Leonel Párica","summary":"Rector electoral, listado en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
+  {"type":"person","title":"Imad Saab Saab","summary":"Rector electoral, listado en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
+  {"type":"person","title":"Aura Hernández","summary":"Rectora electoral, listada en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
+  {"type":"person","title":"Gustavo Vizcaíno","summary":"Rector electoral, listado en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
+  {"type":"person","title":"Antonieta de Stefano","summary":"Rectora electoral, listada en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
+  {"type":"person","title":"Fabio Zavarse","summary":"Rector electoral, listado en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
+  {"type":"person","title":"Francisco Garcés","summary":"Rector electoral, listado en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
+  {"type":"person","title":"Antonio Meneses","summary":"Secretario general del CNE, listado en el comunicado oficial del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]}
+]

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Archivo verificable de actos públicos venezolanos y sus responsables documentados.">
+  <meta name="robots" content="index,follow">
+  <title>Archivo Público Venezuela</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="./" aria-label="Archivo Público Venezuela, inicio">
+      <span class="brand-mark">APV</span>
+      <span>Archivo Público Venezuela</span>
+    </a>
+    <span class="status">Versión preliminar</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Evidencia pública · Venezuela</p>
+      <h1>Los actos públicos,<br>con nombres y fuentes.</h1>
+      <p class="dek">Documentos oficiales preservados, funciones individuales verificables y análisis reproducible. Sin acusaciones anónimas ni conclusiones ocultas.</p>
+    </section>
+
+    <section class="search-panel" aria-labelledby="search-title">
+      <div>
+        <p class="section-label" id="search-title">Buscar el archivo</p>
+        <p class="search-help">Personas, instituciones, documentos o texto de hechos comprobados.</p>
+      </div>
+      <label class="search-box">
+        <span class="sr-only">Buscar</span>
+        <input id="search" type="search" placeholder="Ej. Sala Electoral, sentencia, nombre…" autocomplete="off">
+      </label>
+      <div class="filters" aria-label="Filtros">
+        <button class="filter is-active" data-filter="all" type="button">Todo</button>
+        <button class="filter" data-filter="case" type="button">Actos</button>
+        <button class="filter" data-filter="person" type="button">Personas</button>
+        <button class="filter" data-filter="institution" type="button">Instituciones</button>
+      </div>
+    </section>
+
+    <section class="results" aria-live="polite">
+      <div class="results-head">
+        <p class="section-label">Registros</p>
+        <p id="result-count">Cargando…</p>
+      </div>
+      <div id="result-list" class="result-list"></div>
+      <p id="empty-state" class="empty" hidden>No hay resultados para esta búsqueda.</p>
+    </section>
+
+    <section class="method">
+      <p class="section-label">Cómo leer este archivo</p>
+      <div class="method-grid">
+        <article><span>01</span><h2>Documento</h2><p>El archivo conserva el documento original y publica su huella SHA-256.</p></article>
+        <article><span>02</span><h2>Participación</h2><p>Cada nombre se vincula únicamente con la función que demuestra la fuente.</p></article>
+        <article><span>03</span><h2>Interpretación</h2><p>Hechos, evaluaciones atribuidas y análisis del proyecto aparecen separados.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>La inclusión no constituye condena penal ni designación de sanciones.</p>
+    <p><a href="metodologia.html">Metodología y correcciones</a></p>
+  </footer>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

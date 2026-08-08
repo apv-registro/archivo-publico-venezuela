@@ -1,0 +1,18 @@
+{
+  "id": "VE-P-FANNY-MARQUEZ",
+  "name": "Fanny Beatriz Márquez Cordero",
+  "name_variants": ["Fanny Márquez Cordero"],
+  "birth_date": "1969-02-05",
+  "nationality": ["VE"],
+  "public_positions": [{
+    "title": "Vicepresidenta del Tribunal Supremo de Justicia y de la Sala Electoral",
+    "institution": "Tribunal Supremo de Justicia",
+    "sources": ["EU-2025-REG-2025-44, entrada 57"]
+  }],
+  "sources": [{
+    "url": "https://www.boe.es/doue/2025/044/L00001-00009.pdf",
+    "publisher": "Consejo de la Unión Europea",
+    "retrieved_at": "2026-08-08T00:00:00Z"
+  }],
+  "identity_notes": "Identificación y función según la entrada 57 del Reglamento de Ejecución (UE) 2025/44."
+}

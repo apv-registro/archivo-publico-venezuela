@@ -1,0 +1,18 @@
+{
+  "id": "VE-P-INOCENCIO-FIGUEROA",
+  "name": "Inocencio Antonio Figueroa Arizaleta",
+  "name_variants": ["Inocencio Figueroa Arizaleta"],
+  "birth_date": "1959-12-17",
+  "nationality": ["VE"],
+  "public_positions": [{
+    "title": "Magistrado de la Sala Constitucional",
+    "institution": "Tribunal Supremo de Justicia",
+    "sources": ["EU-2025-REG-2025-44, entrada 58"]
+  }],
+  "sources": [{
+    "url": "https://www.boe.es/doue/2025/044/L00001-00009.pdf",
+    "publisher": "Consejo de la Unión Europea",
+    "retrieved_at": "2026-08-08T00:00:00Z"
+  }],
+  "identity_notes": "Identificación y función según la entrada 58 del Reglamento de Ejecución (UE) 2025/44."
+}
