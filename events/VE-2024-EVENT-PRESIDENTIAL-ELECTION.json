@@ -1,0 +1,19 @@
+{
+  "id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
+  "title": "Elección presidencial de Venezuela de 2024",
+  "period": {"start": "2024-01-01", "end": "2024-08-26"},
+  "classification": "fraud_supported_by_evidence",
+  "conclusion": "La atribución oficial de la victoria a Nicolás Maduro carece de respaldo público verificable y es incompatible con las actas de mesa disponibles. La evidencia preservada sustenta calificar como fraudulenta la atribución oficial del resultado, además de establecer que el proceso no reunió condiciones de integridad electoral.",
+  "acts": [
+    "VE-2024-ACT-CANDIDATE-RESTRICTIONS",
+    "VE-2024-ACT-RESULT-ANNOUNCEMENT",
+    "VE-2024-ACT-WITHHOLDING-RESULTS",
+    "VE-2024-ACT-TSJ-VALIDATION"
+  ],
+  "evidence": ["CC-2025-VENEZUELA-FINAL", "UN-2024-VENEZUELA-INTERIM", "EU-2024-STATEMENT-659-24", "EU-2025-REG-2025-44"],
+  "limitations": [
+    "El CNE no ha publicado el desglose por mesa que permitiría reproducir su total anunciado.",
+    "El archivo todavía no conserva una copia íntegra verificable de la sentencia 031.",
+    "Los indicios de patrones decimales no se usan como prueba autónoma del fraude."
+  ]
+}

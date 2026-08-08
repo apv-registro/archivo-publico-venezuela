@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://archivo-publico-venezuela.github.io/schemas/event.schema.json",
+  "title": "APV event dossier",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "period", "classification", "conclusion", "acts", "evidence"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^VE-[0-9]{4}-EVENT-[A-Z0-9-]+$"},
+    "title": {"type": "string"},
+    "period": {"type": "object", "required": ["start", "end"], "properties": {"start": {"type": "string", "format": "date"}, "end": {"type": "string", "format": "date"}}},
+    "classification": {"enum": ["under_review", "illegitimate", "fraud_supported_by_evidence", "disputed"]},
+    "conclusion": {"type": "string"},
+    "acts": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
+    "evidence": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  }
+}

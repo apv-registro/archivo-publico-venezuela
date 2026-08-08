@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://archivo-publico-venezuela.github.io/schemas/act.schema.json",
+  "title": "APV documented act",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "event_id", "title", "date", "action", "institutions", "evidence"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^VE-[0-9]{4}-ACT-[A-Z0-9-]+$"},
+    "event_id": {"type": "string"},
+    "title": {"type": "string"},
+    "date": {"type": "string", "format": "date"},
+    "action": {"type": "string"},
+    "institutions": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "persons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "role", "evidence"],
+        "properties": {
+          "id": {"type": "string"},
+          "role": {"type": "string"},
+          "evidence": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+        }
+      }
+    },
+    "evidence": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "assessment": {"type": "string"},
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  }
+}

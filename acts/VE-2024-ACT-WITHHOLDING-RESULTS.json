@@ -1,0 +1,12 @@
+{
+  "id": "VE-2024-ACT-WITHHOLDING-RESULTS",
+  "event_id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
+  "title": "No publicación de las actas y resultados desagregados",
+  "date": "2024-08-02",
+  "action": "El CNE no publicó las actas ni resultados por mesa, no utilizó un medio alternativo de divulgación y canceló tres auditorías posteriores que podían contrastar su explicación del supuesto ataque informático.",
+  "institutions": ["VE-I-CNE"],
+  "persons": [],
+  "evidence": ["CC-2025-VENEZUELA-FINAL:pp.7,33-36", "EU-2024-STATEMENT-659-24:p.1"],
+  "assessment": "La omisión impidió verificar el resultado oficial. Frente a ella, 24.532 actas de 30.026 mesas (81,7 %) mostraron 7.156.462 votos para González y 3.241.461 para Maduro.",
+  "limitations": ["La responsabilidad institucional está acreditada; la atribución individual exige documentos de decisión o declaraciones personales adicionales."]
+}

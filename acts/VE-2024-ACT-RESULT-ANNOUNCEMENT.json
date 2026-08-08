@@ -1,0 +1,14 @@
+{
+  "id": "VE-2024-ACT-RESULT-ANNOUNCEMENT",
+  "event_id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
+  "title": "Anuncio de un resultado sin desglose verificable por mesa",
+  "date": "2024-07-29",
+  "action": "El CNE atribuyó la victoria a Nicolás Maduro con 51,2 % frente a 44,2 % para Edmundo González, sin publicar resultados por mesa ni aportar evidencia que permitiera reproducir el total.",
+  "institutions": ["VE-I-CNE"],
+  "persons": [
+    {"id": "VE-P-ELVIS-AMOROSO", "role": "Como presidente del CNE, anunció oralmente los resultados. La identidad se establece combinando el informe de la ONU, que atribuye el anuncio al presidente del CNE, y el comunicado oficial que identifica a Elvis Amoroso en ese cargo.", "evidence": ["UN-2024-VENEZUELA-INTERIM:paras.9-10", "VE-2024-CNE-COMUNICADO-2024-08-26:p.2"]}
+  ],
+  "evidence": ["CC-2025-VENEZUELA-FINAL:pp.4,7,33-36", "UN-2024-VENEZUELA-INTERIM:paras.7-12"],
+  "assessment": "El anuncio no fue verificable y contradice las actas disponibles. El Centro Carter concluyó que la aparente falsificación del resultado y la negativa extraordinaria del CNE anularon la integridad del proceso.",
+  "limitations": ["La atribución a Elvis Amoroso es una inferencia documental explícita a partir del cargo; sigue pendiente preservar la grabación original del primer boletín."]
+}

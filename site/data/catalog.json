@@ -1,58 +1,48 @@
 [
   {
-    "type": "case",
-    "title": "Sentencia 031 sobre la elección presidencial de 2024",
+    "type": "event",
+    "title": "Elección presidencial de Venezuela de 2024",
+    "href": "events/VE-2024-PRESIDENTIAL-ELECTION.html",
+    "summary": "Expediente principal: fundamento de la ilegitimidad del proceso y del fraude en la atribución oficial del resultado, actos componentes, instituciones y participación individual acreditada.",
+    "date": "2024-07-28",
+    "keywords": ["fraude electoral", "elección 2024", "Nicolás Maduro", "Edmundo González", "actas", "CNE", "TSJ"]
+  },
+  {
+    "type": "act",
+    "title": "Restricciones arbitrarias a candidaturas opositoras",
+    "href": "events/VE-2024-PRESIDENTIAL-ELECTION.html#acto-candidaturas",
+    "summary": "El CNE impidió inscribir a la ganadora de las primarias opositoras y bloqueó inicialmente a la segunda opción sin explicación suficiente.",
+    "date": "2024-03-26",
+    "keywords": ["María Corina Machado", "Corina Yoris", "CNE", "candidaturas"]
+  },
+  {
+    "type": "act",
+    "title": "Anuncio de un resultado sin desglose verificable",
+    "href": "events/VE-2024-PRESIDENTIAL-ELECTION.html#acto-anuncio",
+    "summary": "El CNE atribuyó la victoria a Nicolás Maduro sin publicar datos por mesa ni evidencia que permitiera reproducir el total.",
+    "date": "2024-07-29",
+    "keywords": ["primer boletín", "51,2", "44,2", "Elvis Amoroso", "CNE"]
+  },
+  {
+    "type": "act",
+    "title": "No publicación de actas y resultados desagregados",
+    "href": "events/VE-2024-PRESIDENTIAL-ELECTION.html#acto-ocultamiento",
+    "summary": "La omisión impidió verificar el anuncio oficial; 24.532 actas publicadas y verificadas mostraron una diferencia irreversible a favor de Edmundo González.",
+    "date": "2024-08-02",
+    "keywords": ["actas", "81,7", "7.156.462", "3.241.461", "CNE"]
+  },
+  {
+    "type": "act",
+    "title": "Validación judicial del resultado no verificable",
     "href": "cases/VE-2024-TSJ-ELECTION-VALIDATION.html",
-    "summary": "El CNE afirmó que la Sala Electoral certificó el material peritado y convalidó los resultados. El texto íntegro de la sentencia final aún no ha sido localizado por el archivo.",
+    "summary": "La Sala Electoral validó el resultado sin publicar metodología, muestra, materiales, cadena de custodia ni datos por mesa.",
     "date": "2024-08-22",
-    "keywords": ["TSJ", "Sala Electoral", "CNE", "elecciones 2024", "sentencia 031", "AA70-E-2024-000034"]
+    "keywords": ["TSJ", "Sala Electoral", "sentencia 031", "Caryslia Rodríguez", "Fanny Márquez", "Inocencio Figueroa"]
   },
-  {
-    "type": "institution",
-    "title": "Sala Electoral del Tribunal Supremo de Justicia",
-    "summary": "Órgano que dictó la sentencia 031 del 22 de agosto de 2024.",
-    "date": "2024-08-22",
-    "keywords": ["TSJ", "Tribunal Supremo", "Sala Electoral"]
-  },
-  {
-    "type": "institution",
-    "title": "Consejo Nacional Electoral",
-    "summary": "Publicó el comunicado del 26 de agosto que describe la sentencia 031 y enumera a sus autoridades.",
-    "date": "2024-08-26",
-    "keywords": ["CNE", "Poder Electoral", "comunicado"]
-  },
-  {
-    "type": "person",
-    "title": "Caryslia Beatriz Rodríguez Rodríguez",
-    "summary": "Presidenta del TSJ y de la Sala Electoral; función e intervención descritas en el Reglamento de Ejecución (UE) 2025/44.",
-    "date": "2025-01-10",
-    "keywords": ["Caryslia Rodríguez", "TSJ", "Sala Electoral", "UE 2025/44"]
-  },
-  {
-    "type": "person",
-    "title": "Fanny Beatriz Márquez Cordero",
-    "summary": "Vicepresidenta del TSJ y de la Sala Electoral; participación descrita en el Reglamento de Ejecución (UE) 2025/44.",
-    "date": "2025-01-10",
-    "keywords": ["Fanny Márquez", "TSJ", "Sala Electoral", "UE 2025/44"]
-  },
-  {
-    "type": "person",
-    "title": "Inocencio Antonio Figueroa Arizaleta",
-    "summary": "Magistrado del TSJ; apoyo a la certificación descrito en el Reglamento de Ejecución (UE) 2025/44.",
-    "date": "2025-01-10",
-    "keywords": ["Inocencio Figueroa", "TSJ", "UE 2025/44"]
-  },
-  {"type":"person","title":"Elvis Amoroso","summary":"Presidente del CNE, listado en el comunicado oficial del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE","Poder Electoral"]},
-  {"type":"person","title":"Carlos Quintero","summary":"Vicepresidente del CNE, listado en el comunicado oficial del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE","Poder Electoral"]},
-  {"type":"person","title":"Rosalba Gil","summary":"Rectora electoral, listada en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
-  {"type":"person","title":"Acme Nogal","summary":"Rectora electoral, listada en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
-  {"type":"person","title":"Conrado Pérez","summary":"Rector electoral, listado en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
-  {"type":"person","title":"Leonel Párica","summary":"Rector electoral, listado en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
-  {"type":"person","title":"Imad Saab Saab","summary":"Rector electoral, listado en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
-  {"type":"person","title":"Aura Hernández","summary":"Rectora electoral, listada en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
-  {"type":"person","title":"Gustavo Vizcaíno","summary":"Rector electoral, listado en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
-  {"type":"person","title":"Antonieta de Stefano","summary":"Rectora electoral, listada en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
-  {"type":"person","title":"Fabio Zavarse","summary":"Rector electoral, listado en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
-  {"type":"person","title":"Francisco Garcés","summary":"Rector electoral, listado en el comunicado oficial del CNE del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]},
-  {"type":"person","title":"Antonio Meneses","summary":"Secretario general del CNE, listado en el comunicado oficial del 26 de agosto de 2024.","date":"2024-08-26","keywords":["CNE"]}
+  {"type":"institution","title":"Consejo Nacional Electoral","summary":"Institución responsable del anuncio, totalización y publicación de resultados; no publicó el desglose por mesa que sustentara el resultado anunciado.","date":"2024-08-02","keywords":["CNE","Poder Electoral","actas","resultados"]},
+  {"type":"institution","title":"Sala Electoral del Tribunal Supremo de Justicia","summary":"Realizó un examen sin metodología pública y validó el resultado anunciado por el CNE el 22 de agosto de 2024.","date":"2024-08-22","keywords":["TSJ","Tribunal Supremo","Sala Electoral"]},
+  {"type":"person","title":"Elvis Amoroso","summary":"Como presidente del CNE, anunció oralmente el resultado sin publicar el desglose por mesa. Atribución construida con el informe de la ONU y el comunicado oficial que acredita su cargo.","date":"2024-07-29","keywords":["Elvis Amoroso","CNE","primer boletín","anuncio"]},
+  {"type":"person","title":"Caryslia Beatriz Rodríguez Rodríguez","summary":"Presidió la Sala Electoral y declaró la victoria proclamada, según la atribución formal del Consejo de la UE.","date":"2024-08-22","keywords":["Caryslia Rodríguez","TSJ","sentencia 031","UE 2025/44"]},
+  {"type":"person","title":"Fanny Beatriz Márquez Cordero","summary":"Participó en la certificación del resultado no respaldado por actas publicadas, según el Consejo de la UE.","date":"2024-08-22","keywords":["Fanny Márquez","TSJ","certificación","UE 2025/44"]},
+  {"type":"person","title":"Inocencio Antonio Figueroa Arizaleta","summary":"Apoyó la certificación del resultado no respaldado por actas publicadas, según el Consejo de la UE.","date":"2024-08-22","keywords":["Inocencio Figueroa","TSJ","certificación","UE 2025/44"]}
 ]

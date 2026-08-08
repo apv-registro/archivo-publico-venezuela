@@ -1,0 +1,16 @@
+{
+  "id": "VE-2024-ACT-TSJ-VALIDATION",
+  "event_id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
+  "title": "Validación judicial del resultado no verificable",
+  "date": "2024-08-22",
+  "action": "La Sala Electoral afirmó haber peritado material electoral no publicado y validó el resultado del CNE sin divulgar metodología, muestra, materiales, cadena de custodia ni datos por mesa.",
+  "institutions": ["VE-I-TSJ-SALA-ELECTORAL", "VE-I-CNE"],
+  "persons": [
+    {"id": "VE-P-CARYSLIA-RODRIGUEZ", "role": "Presidió la Sala Electoral y declaró la victoria proclamada, según la atribución formal del Consejo de la UE.", "evidence": ["EU-2025-REG-2025-44:anexo,entrada-56"]},
+    {"id": "VE-P-FANNY-MARQUEZ", "role": "Participó en la certificación del resultado no respaldado por actas publicadas, según el Consejo de la UE.", "evidence": ["EU-2025-REG-2025-44:anexo,entrada-57"]},
+    {"id": "VE-P-INOCENCIO-FIGUEROA", "role": "Apoyó la certificación del resultado no respaldado por actas publicadas, según el Consejo de la UE.", "evidence": ["EU-2025-REG-2025-44:anexo,entrada-58"]}
+  ],
+  "evidence": ["CC-2025-VENEZUELA-FINAL:pp.37-38", "VE-2024-CNE-COMUNICADO-2024-08-26:p.1", "EU-2025-REG-2025-44:anexo,entradas-56-58"],
+  "assessment": "El acto otorgó confirmación judicial a un resultado que seguía sin poder ser auditado públicamente y que era incompatible con las actas disponibles.",
+  "limitations": ["Falta el texto íntegro verificable de la sentencia 031; no se sustituye con la orden procesal anterior."]
+}

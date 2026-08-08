@@ -1,7 +1,8 @@
 # Archivo Público Venezuela
 
-Archivo Público Venezuela (APV) is a preservation-first collection of official
-Venezuelan public acts and the public officials who participated in them.
+Archivo Público Venezuela (APV) is a preservation-first collection of documented
+Venezuelan events, the acts that compose them, and the institutions and people
+whose participation can be tied to specific evidence.
 
 The project records documents, provenance, institutional roles, and reproducible
 analysis. It does not treat inclusion as a criminal conviction, sanctions
@@ -9,8 +10,7 @@ designation, or finding of corruption.
 
 ## Current status
 
-Pre-publication foundation. No external accounts are connected and no material
-has been published.
+Public pilot. The first event dossier covers the 2024 presidential election.
 
 ## Design constraints
 
@@ -25,7 +25,9 @@ has been published.
 ## Repository layout
 
 ```text
-cases/       One directory per official act or event
+events/      Top-level episodes and their evidentiary conclusions
+acts/        Concrete acts before, during, and after an event
+cases/       Detailed legacy act dossiers
 entities/    Stable records for people and institutions
 documents/   Preservation manifests; document binaries may use release storage
 schemas/     Machine-readable validation rules
@@ -44,4 +46,3 @@ payment, DNS, and recovery records add identity-linking surfaces.
 Account creation must follow `policies/OPSEC.md`. Do not create the account from
 an existing personal browser profile or reuse any email address, username,
 password, recovery method, SSH key, avatar, biography, or commit identity.
-

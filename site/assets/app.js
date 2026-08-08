@@ -4,7 +4,7 @@
   const list = document.querySelector('#result-list');
   const count = document.querySelector('#result-count');
   const empty = document.querySelector('#empty-state');
-  const labels = { case: 'Acto', person: 'Persona', institution: 'Institución' };
+  const labels = { event: 'Evento', act: 'Acto', case: 'Acto', person: 'Persona', institution: 'Institución' };
 
   const normalized = value => (value || '')
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
