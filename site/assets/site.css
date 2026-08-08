@@ -93,10 +93,27 @@ footer { padding-block: 30px 50px; display: flex; justify-content: space-between
 .responsibility { margin-top: 18px; padding: 16px 18px; background: #e8e3d7; }
 .responsibility b { display: block; margin-bottom: 5px; }
 .scope-note { color: var(--muted); font-size: .9rem; }
+.procedure-list { max-width: 880px; margin: 0; padding-left: 1.4rem; }
+.procedure-list li { padding: 12px 0 12px 10px; border-top: 1px solid var(--line); }
+.sop-page h1 { max-width: 980px; }
+.event-intro { max-width: 850px; font-size: 1.15rem; }
+.act-summary { display: grid; grid-template-columns: 82px 1fr auto; gap: 20px; padding: 26px 0; border-top: 1px solid var(--line); }
+.act-summary .act-id { color: var(--red); font-size: .76rem; font-weight: 700; }
+.act-summary h3 { margin: -5px 0 8px; font-family: Georgia, 'Times New Roman', serif; font-size: 1.65rem; font-weight: 400; }
+.act-summary p { margin: 0; color: var(--muted); }
+.act-summary a { align-self: center; font-weight: 700; }
+.comparison { width: 100%; border-collapse: collapse; margin-top: 20px; }
+.comparison th, .comparison td { padding: 13px 12px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+.comparison th { background: var(--ink); color: var(--white); font-size: .78rem; letter-spacing: .05em; }
+.evidence-status { display: inline-block; padding: 4px 8px; color: var(--white); background: var(--red); font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.evidence-status.is-preserved { background: #315d48; }
+.person-row { padding: 18px 0; border-top: 1px solid var(--line); }
+.person-row h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.person-row p { margin: 0; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
 @media (max-width: 720px) {
-  .search-panel, .method-grid, .evidence-stat { grid-template-columns: 1fr; }
+  .search-panel, .method-grid, .evidence-stat, .act-summary { grid-template-columns: 1fr; }
   .result-card { grid-template-columns: 1fr; gap: 7px; }
   .result-date { grid-row: 1; }
   footer { flex-direction: column; }

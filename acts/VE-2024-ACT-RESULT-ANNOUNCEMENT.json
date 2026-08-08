@@ -1,14 +1,15 @@
 {
   "id": "VE-2024-ACT-RESULT-ANNOUNCEMENT",
   "event_id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
-  "title": "Anuncio de un resultado sin desglose verificable por mesa",
-  "date": "2024-07-29",
-  "action": "El CNE atribuyó la victoria a Nicolás Maduro con 51,2 % frente a 44,2 % para Edmundo González, sin publicar resultados por mesa ni aportar evidencia que permitiera reproducir el total.",
-  "institutions": ["VE-I-CNE"],
-  "persons": [
-    {"id": "VE-P-ELVIS-AMOROSO", "role": "Como presidente del CNE, anunció oralmente los resultados. La identidad se establece combinando el informe de la ONU, que atribuye el anuncio al presidente del CNE, y el comunicado oficial que identifica a Elvis Amoroso en ese cargo.", "evidence": ["UN-2024-VENEZUELA-INTERIM:paras.9-10", "VE-2024-CNE-COMUNICADO-2024-08-26:p.2"]}
-  ],
-  "evidence": ["CC-2025-VENEZUELA-FINAL:pp.4,7,33-36", "UN-2024-VENEZUELA-INTERIM:paras.7-12"],
-  "assessment": "El anuncio no fue verificable y contradice las actas disponibles. El Centro Carter concluyó que la aparente falsificación del resultado y la negativa extraordinaria del CNE anularon la integridad del proceso.",
-  "limitations": ["La atribución a Elvis Amoroso es una inferencia documental explícita a partir del cargo; sigue pendiente preservar la grabación original del primer boletín."]
+  "title": "Anuncio y ratificación de resultados sin soporte desagregado",
+  "date": "2024-07-29/2024-08-02",
+  "issuer": ["VE-I-CNE"],
+  "action": "El presidente del CNE anunció dos conjuntos de totales nacionales que atribuían la victoria a Nicolás Maduro sin publicar el soporte mesa por mesa, el acta de totalización ni las hojas complementarias.",
+  "status": "partial",
+  "official_records": [{"id": "VE-2024-CNE-FIRST-BULLETIN", "title": "Primer boletín audiovisual", "preservation_status": "located", "source_url": "https://www.youtube.com/watch?v=YaFtaEJgokM"}, {"id": "VE-2024-CNE-SECOND-BULLETIN", "title": "Segundo boletín del 2 de agosto", "preservation_status": "located", "source_url": "https://rnv.gob.ve/cne-ratifica-contundente-victoria-de-nicolas-maduro-con-mas-de-6-millones-400-mil-votos/"}],
+  "normative_basis": [{"title": "Ley Orgánica de Procesos Electorales", "locator": "artículos 114, 116, 120 y 123"}, {"title": "Reglamento General de la LOPRE", "locator": "artículos 381-386 y 392"}],
+  "persons": [{"id": "VE-P-ELVIS-AMOROSO", "action": "Leyó y atribuyó públicamente ambos resultados como presidente del CNE", "attribution": "direct", "evidence": ["VE-2024-CNE-FIRST-BULLETIN", "VE-2024-CNE-SECOND-BULLETIN"]}],
+  "findings": ["Las cifras no pueden reproducirse desde documentos oficiales publicados.", "El soporte exigible para conectar actas, totalización y proclamación no fue publicado."],
+  "external_references": [],
+  "open_questions": ["Preservar grabaciones originales completas.", "Obtener acta de totalización, boletín final y hojas complementarias."]
 }

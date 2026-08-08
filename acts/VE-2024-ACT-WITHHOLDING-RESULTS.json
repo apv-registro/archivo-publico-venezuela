@@ -1,12 +1,15 @@
 {
   "id": "VE-2024-ACT-WITHHOLDING-RESULTS",
   "event_id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
-  "title": "No publicación de las actas y resultados desagregados",
-  "date": "2024-08-02",
-  "action": "El CNE no publicó las actas ni resultados por mesa, no utilizó un medio alternativo de divulgación y canceló tres auditorías posteriores que podían contrastar su explicación del supuesto ataque informático.",
-  "institutions": ["VE-I-CNE"],
+  "title": "No publicación de actas y resultados mesa por mesa",
+  "date": "2024-07-29/open",
+  "issuer": ["VE-I-CNE"],
+  "action": "El CNE no publicó los documentos y datos desagregados necesarios para verificar la totalización y no se ha localizado la publicación íntegra exigida en Gaceta Electoral.",
+  "status": "partial",
+  "official_records": [{"id": "VE-2024-CNE-COMUNICADO-2024-08-26", "title": "Comunicado oficial del CNE", "preservation_status": "preserved", "sha256": "dea3b8c4b9a9b9e18a16f1dd9b00adc7492eb920b34eb0230885f285efd8c91a"}],
+  "normative_basis": [{"title": "Ley Orgánica de Procesos Electorales", "locator": "artículos 120 y 125"}, {"title": "Reglamento General de la LOPRE", "locator": "artículos 382, 385 y 395"}],
   "persons": [],
-  "evidence": ["CC-2025-VENEZUELA-FINAL:pp.7,33-36", "EU-2024-STATEMENT-659-24:p.1"],
-  "assessment": "La omisión impidió verificar el resultado oficial. Frente a ella, 24.532 actas de 30.026 mesas (81,7 %) mostraron 7.156.462 votos para González y 3.241.461 para Maduro.",
-  "limitations": ["La responsabilidad institucional está acreditada; la atribución individual exige documentos de decisión o declaraciones personales adicionales."]
+  "findings": ["El comunicado promete publicar resultados, pero cita el artículo 155 LOPRE, que trata sobre electores con discapacidad; la publicación está en el artículo 125.", "La lista de autoridades al pie del comunicado no demuestra el voto individual de cada una."],
+  "external_references": [],
+  "open_questions": ["Localizar Gaceta Electoral, acta de totalización, boletín final, hojas complementarias y resultados mesa por mesa.", "Determinar decisiones y responsabilidades individuales sobre la publicación."]
 }

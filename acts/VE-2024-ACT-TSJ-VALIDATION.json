@@ -3,14 +3,13 @@
   "event_id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
   "title": "Validación judicial del resultado no verificable",
   "date": "2024-08-22",
-  "action": "La Sala Electoral afirmó haber peritado material electoral no publicado y validó el resultado del CNE sin divulgar metodología, muestra, materiales, cadena de custodia ni datos por mesa.",
-  "institutions": ["VE-I-TSJ-SALA-ELECTORAL", "VE-I-CNE"],
-  "persons": [
-    {"id": "VE-P-CARYSLIA-RODRIGUEZ", "role": "Presidió la Sala Electoral y declaró la victoria proclamada, según la atribución formal del Consejo de la UE.", "evidence": ["EU-2025-REG-2025-44:anexo,entrada-56"]},
-    {"id": "VE-P-FANNY-MARQUEZ", "role": "Participó en la certificación del resultado no respaldado por actas publicadas, según el Consejo de la UE.", "evidence": ["EU-2025-REG-2025-44:anexo,entrada-57"]},
-    {"id": "VE-P-INOCENCIO-FIGUEROA", "role": "Apoyó la certificación del resultado no respaldado por actas publicadas, según el Consejo de la UE.", "evidence": ["EU-2025-REG-2025-44:anexo,entrada-58"]}
-  ],
-  "evidence": ["CC-2025-VENEZUELA-FINAL:pp.37-38", "VE-2024-CNE-COMUNICADO-2024-08-26:p.1", "EU-2025-REG-2025-44:anexo,entradas-56-58"],
-  "assessment": "El acto otorgó confirmación judicial a un resultado que seguía sin poder ser auditado públicamente y que era incompatible con las actas disponibles.",
-  "limitations": ["Falta el texto íntegro verificable de la sentencia 031; no se sustituye con la orden procesal anterior."]
+  "issuer": ["VE-I-TSJ-SALA-ELECTORAL"],
+  "action": "La Sala Electoral afirmó haber certificado material electoral, convalidó el resultado anunciado por el CNE y corroboró un supuesto ataque informático sin publicar la sentencia íntegra, evidencia, método ni informe pericial.",
+  "status": "partial",
+  "official_records": [{"id": "VE-2024-TSJ-ORDER-2024-08-10", "title": "Orden de continuación del peritaje", "preservation_status": "preserved", "sha256": "aa66ed7b796b02bfbf2a0efc6922b578fa28bc42a16e81ee2abd61f8bf0e4076"}, {"id": "VE-2024-TSJ-SENTENCE-031", "title": "Sentencia definitiva 031", "preservation_status": "missing"}, {"id": "VE-2024-CNE-COMUNICADO-2024-08-26", "title": "Comunicado del CNE que describe la sentencia", "preservation_status": "preserved", "sha256": "dea3b8c4b9a9b9e18a16f1dd9b00adc7492eb920b34eb0230885f285efd8c91a"}],
+  "normative_basis": [{"title": "Constitución de Venezuela", "locator": "artículo 297"}, {"title": "Ley Orgánica de Procesos Electorales", "locator": "artículos 114-125 y 164"}],
+  "persons": [{"id": "VE-P-NICOLAS-MADURO", "action": "Promovió la actuación judicial que solicitó revisar o verificar el resultado", "attribution": "direct", "evidence": ["VE-2024-TSJ-ORDER-2024-08-10"]}, {"id": "VE-P-ELVIS-AMOROSO", "action": "Encabezó la comparecencia del CNE y entregó recaudos a la Sala", "attribution": "direct", "evidence": ["VE-2024-TSJ-ORDER-2024-08-10:p.1"]}, {"id": "VE-P-CARYSLIA-RODRIGUEZ", "action": "Presidió la Sala y leyó públicamente la decisión", "attribution": "direct", "evidence": ["VE-2024-TSJ-READING-2024-08-22"]}],
+  "findings": ["No puede verificarse la controversia resuelta ni las premisas del fallo sin el recurso y la sentencia.", "El supuesto peritaje carece públicamente de material, método, expertos, muestra, trazabilidad y resultados.", "La convalidación judicial no sustituyó el deber del CNE de publicar el soporte desagregado."],
+  "external_references": [{"title": "Reglamento de Ejecución (UE) 2025/44", "locator": "anexo, entradas 56-58", "url": "http://data.europa.eu/eli/reg_impl/2025/44/oj"}],
+  "open_questions": ["Obtener sentencia 031, recurso inicial, autos, actas de audiencia, inventario de evidencia e informe pericial.", "Obtener evidencia técnica del supuesto ataque informático.", "Confirmar mediante registro oficial venezolano la intervención individual de todos los magistrados."]
 }

@@ -1,0 +1,9 @@
+{
+  "id": "VE-P-NICOLAS-MADURO",
+  "name": "Nicolás Maduro Moros",
+  "name_variants": ["Nicolás Maduro"],
+  "nationality": ["VE"],
+  "public_positions": [{"title": "Presidente de la República", "institution": "Presidencia de la República", "sources": ["Orden del expediente AA70-E-2024-000034"]}],
+  "sources": [{"url": "https://apv-registro.github.io/archivo-publico-venezuela/documents/VE-2024-TSJ-ORDER-2024-08-10.pdf", "publisher": "Tribunal Supremo de Justicia", "retrieved_at": "2026-08-08T00:00:00Z"}],
+  "identity_notes": "Vinculado al acto VE-2024-ACT-TSJ-VALIDATION como promovente de la actuación judicial; el escrito original está pendiente."
+}

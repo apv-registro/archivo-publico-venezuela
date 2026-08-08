@@ -1,18 +1,21 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://archivo-publico-venezuela.github.io/schemas/event.schema.json",
+  "$id": "https://apv-registro.github.io/archivo-publico-venezuela/schemas/event.schema.json",
   "title": "APV event dossier",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "title", "period", "classification", "conclusion", "acts", "evidence"],
+  "required": ["id", "title", "period", "description", "question", "conclusion", "status", "acts", "official_evidence", "external_references", "open_questions"],
   "properties": {
     "id": {"type": "string", "pattern": "^VE-[0-9]{4}-EVENT-[A-Z0-9-]+$"},
     "title": {"type": "string"},
-    "period": {"type": "object", "required": ["start", "end"], "properties": {"start": {"type": "string", "format": "date"}, "end": {"type": "string", "format": "date"}}},
-    "classification": {"enum": ["under_review", "illegitimate", "fraud_supported_by_evidence", "disputed"]},
+    "period": {"type": "object", "required": ["start", "end"], "properties": {"start": {"type": "string"}, "end": {"type": "string"}}},
+    "description": {"type": "string"},
+    "question": {"type": "string"},
     "conclusion": {"type": "string"},
+    "status": {"enum": ["open", "documented", "disputed", "corrected"]},
     "acts": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
-    "evidence": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
-    "limitations": {"type": "array", "items": {"type": "string"}}
+    "official_evidence": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "external_references": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "open_questions": {"type": "array", "items": {"type": "string"}}
   }
 }

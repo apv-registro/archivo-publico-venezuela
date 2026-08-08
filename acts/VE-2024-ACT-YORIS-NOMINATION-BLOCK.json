@@ -1,0 +1,15 @@
+{
+  "id": "VE-2024-ACT-YORIS-NOMINATION-BLOCK",
+  "event_id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
+  "title": "Impedimento de la postulación de Corina Yoris",
+  "date": "2024-03-21/2024-03-25",
+  "issuer": ["VE-I-CNE"],
+  "action": "Las organizaciones opositoras habilitadas denunciaron que el sistema del CNE no les permitió registrar a Corina Yoris dentro del plazo y no se ha localizado una decisión formal del CNE sobre el intento.",
+  "status": "open",
+  "official_records": [{"id": "VE-2024-CNE-YORIS-REGISTRATION", "title": "Registros técnicos y decisión sobre postulación", "preservation_status": "missing"}],
+  "normative_basis": [{"title": "Ley Orgánica de Procesos Electorales", "locator": "artículos 51 y 55-57", "url": "https://www.iidh.ed.cr/images/capel/legislacion-electoral/Venezuela_Ley%20Organica%20de%20Procesos%20Electorales.pdf"}],
+  "persons": [{"id": "VE-P-CORINA-YORIS", "action": "Persona cuya postulación se intentó registrar", "attribution": "affected", "evidence": ["PUD-2024-03-25-DENUNCIA"]}],
+  "findings": ["No debe inventarse una resolución de rechazo: el acto investigado es el impedimento material y la ausencia de respuesta formal localizada."],
+  "external_references": [],
+  "open_questions": ["Obtener registros de acceso, solicitudes, comunicaciones y respuesta del CNE.", "Determinar qué funcionario administró o decidió sobre el sistema de postulaciones."]
+}

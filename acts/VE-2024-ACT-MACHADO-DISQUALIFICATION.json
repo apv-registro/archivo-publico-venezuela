@@ -1,0 +1,18 @@
+{
+  "id": "VE-2024-ACT-MACHADO-DISQUALIFICATION",
+  "event_id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
+  "title": "Ratificación de la inhabilitación de María Corina Machado",
+  "date": "2024-01-26",
+  "issuer": ["VE-I-TSJ-SALA-POLITICO-ADMINISTRATIVA", "VE-I-CGR"],
+  "action": "La Sala Político-Administrativa mantuvo la inhabilitación administrativa por quince años que impidió postular a la ganadora de las primarias opositoras.",
+  "status": "partial",
+  "official_records": [
+    {"id": "VE-2024-TSJ-SPA-00005", "title": "Sentencia 00005, expediente 2023-0461", "preservation_status": "missing"},
+    {"id": "VE-2021-CGR-01-00-000285", "title": "Resolución 01-00-000285 de la Contraloría", "preservation_status": "missing"}
+  ],
+  "normative_basis": [],
+  "persons": [{"id": "VE-P-MARIA-CORINA-MACHADO", "action": "Persona afectada por la inhabilitación", "attribution": "affected", "evidence": ["RNV-2024-01-26-TSJ-INHABILITACION"]}],
+  "findings": ["La decisión tuvo el efecto directo de excluir de la elección a la ganadora de las primarias opositoras.", "Sin los dos actos íntegros no puede cerrarse el análisis de procedimiento, motivación, notificación y competencia."],
+  "external_references": [],
+  "open_questions": ["Obtener la sentencia 00005 íntegra.", "Obtener la resolución de Contraloría y prueba de notificación y publicación."]
+}

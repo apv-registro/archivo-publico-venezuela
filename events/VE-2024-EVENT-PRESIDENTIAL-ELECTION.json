@@ -1,19 +1,13 @@
 {
   "id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
   "title": "Elección presidencial de Venezuela de 2024",
-  "period": {"start": "2024-01-01", "end": "2024-08-26"},
-  "classification": "fraud_supported_by_evidence",
-  "conclusion": "La atribución oficial de la victoria a Nicolás Maduro carece de respaldo público verificable y es incompatible con las actas de mesa disponibles. La evidencia preservada sustenta calificar como fraudulenta la atribución oficial del resultado, además de establecer que el proceso no reunió condiciones de integridad electoral.",
-  "acts": [
-    "VE-2024-ACT-CANDIDATE-RESTRICTIONS",
-    "VE-2024-ACT-RESULT-ANNOUNCEMENT",
-    "VE-2024-ACT-WITHHOLDING-RESULTS",
-    "VE-2024-ACT-TSJ-VALIDATION"
-  ],
-  "evidence": ["CC-2025-VENEZUELA-FINAL", "UN-2024-VENEZUELA-INTERIM", "EU-2024-STATEMENT-659-24", "EU-2025-REG-2025-44"],
-  "limitations": [
-    "El CNE no ha publicado el desglose por mesa que permitiría reproducir su total anunciado.",
-    "El archivo todavía no conserva una copia íntegra verificable de la sentencia 031.",
-    "Los indicios de patrones decimales no se usan como prueba autónoma del fraude."
-  ]
+  "period": {"start": "2024-01-26", "end": "open"},
+  "description": "Proceso para elegir la Presidencia para 2025-2031 y conjunto de decisiones públicas que afectaron la competencia, la emisión y publicación de resultados y su revisión judicial.",
+  "question": "¿Puede la atribución oficial de la victoria a Nicolás Maduro reconstruirse mediante un procedimiento verificable conforme a las reglas electorales venezolanas?",
+  "conclusion": "La atribución oficial no está sustentada por evidencia pública reproducible y contradice el conjunto disponible de actas emitidas por las máquinas del CNE. El expediente califica como fraudulenta la atribución oficial del resultado.",
+  "status": "open",
+  "acts": ["VE-2024-ACT-MACHADO-DISQUALIFICATION", "VE-2024-ACT-YORIS-NOMINATION-BLOCK", "VE-2024-ACT-RESULT-ANNOUNCEMENT", "VE-2024-ACT-WITHHOLDING-RESULTS", "VE-2024-ACT-TSJ-VALIDATION"],
+  "official_evidence": ["VE-2024-CNE-COMUNICADO-2024-08-26", "VE-2024-TSJ-ORDER-2024-08-10"],
+  "external_references": ["UN-2024-VENEZUELA-INTERIM", "CC-2025-VENEZUELA-FINAL", "EU-2024-STATEMENT-659-24"],
+  "open_questions": ["Localizar los documentos de totalización y resultados oficiales mesa por mesa.", "Localizar la sentencia 031 y su expediente.", "Completar los registros oficiales de inhabilitación y postulaciones."]
 }

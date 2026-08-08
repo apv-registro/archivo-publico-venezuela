@@ -25,7 +25,6 @@ jobs:
           mkdir -p _site/documents _site/data
           cp -R site/. _site/
           cp documents/*.pdf _site/documents/
-          cp cases/*.json _site/data/
           cp events/*.json _site/data/
           cp acts/*.json _site/data/
           cp entities/*.json _site/data/
