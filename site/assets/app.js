@@ -1,5 +1,5 @@
 (() => {
-  const state = { records: [], filter: 'all', query: '' };
+  const state = { records: [], filter: 'event', query: '' };
   const input = document.querySelector('#search');
   const list = document.querySelector('#result-list');
   const count = document.querySelector('#result-count');
