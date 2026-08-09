@@ -1,6 +1,6 @@
 # SOP-01: documentación de eventos, actos y responsabilidad
 
-Versión 2.2 — obligatoria para todo expediente nuevo o revisado.
+Versión 2.3 — obligatoria para todo expediente nuevo o revisado.
 
 ## 1. Finalidad
 
@@ -22,7 +22,7 @@ Decisión, acción, omisión o comunicación atribuible a un órgano y delimitab
 
 ### Persona
 
-Toda persona identificable que aparezca en un documento preservado se registra una sola vez y se enlaza con el documento, el localizador exacto y la calidad en que aparece. El inventario distingue, como mínimo: sujeto afectado, solicitante, abogado, destinatario, firmante, decisor, autoridad funcional, compareciente y persona meramente mencionada. La aparición documental no equivale a responsabilidad.
+Toda persona identificable que aparezca en un documento preservado se registra una sola vez en el inventario nominal, con documento, localizador exacto y calidad. Ese registro técnico evita homónimos y no equivale a una ficha de responsabilidad. Las páginas de actos priorizan decisores, firmantes, ejecutores y autoridades funcionales; los afectados, solicitantes, abogados y personas meramente mencionadas aparecen solamente donde sean necesarios para describir el acto o el documento.
 
 ### Registro documento–persona
 
@@ -38,7 +38,9 @@ Cada archivo del manifiesto tiene una entrada propia en el inventario nominal, i
 | D | Norma o registro oficial de competencia, nombramiento y estructura | Contraste normativo e identificación institucional |
 | E | Decisión oficial de otro Estado u organismo que atribuye nominalmente una conducta | Corroboración atribuida; no sustituye el registro venezolano del acto |
 
-Prensa, informes de observación, análisis académicos y comentarios forman una bibliografía de investigación separada. Sirven para localizar, interpretar o contrastar fuentes, pero no aparecen como evidencia preservada del acto ni sustituyen una fuente de clases A-E. Cada conclusión jurídica tomada de esa bibliografía se atribuye a su autor; el archivo no la presenta como contenido del documento oficial.
+Prensa, informes de observación, análisis académicos y comentarios forman una bibliografía de investigación separada. Sirven para localizar, interpretar o contrastar fuentes, pero no aparecen como evidencia preservada del acto ni sustituyen una fuente de clases A-E. Una noticia de un medio estatal tampoco sustituye una resolución, sentencia, gaceta, acta, registro técnico o audiovisual oficial.
+
+La página pública separa materialmente: **evidencia del acto**, **declaraciones o alegaciones directas**, **referencias normativas e institucionales** y **atribuciones oficiales externas**. Una norma acredita el deber aplicable, no la conducta; una denuncia acredita que fue formulada, no el mecanismo denunciado.
 
 ## 4. Puerta de preservación
 
@@ -70,6 +72,8 @@ La URL original acompaña la procedencia, pero nunca es el único acceso. Una ca
 12. **Actualizar el evento.** La conclusión se deriva solo de los actos publicados.
 13. **Validar.** Hashes, enlaces locales, metadatos, citas, JSON, inventario nominal, lenguaje público y coherencia entre índice, evento y actos.
 
+Todo nombre presentado como firmante, decisor, ejecutor o autoridad funcional enlaza su registro nominal. Cada relación de ese registro enlaza de vuelta al acto y, cuando existe copia preservada, al archivo exacto del manifiesto.
+
 ## 5.1 Correspondencia obligatoria entre acto y fuente
 
 Antes de publicar un documento bajo un acto se completa una matriz con cinco campos:
@@ -94,6 +98,8 @@ Un enlace relacionado, una reproducción periodística o una declaración poster
 
 La revisión no termina al encontrar a los decisores. Incluye afectados, partes, abogados, autores, firmantes, funcionarios, candidatos, precedentes citados, personas mencionadas y cuentas personales capturadas incidentalmente. Las entidades colectivas se registran como instituciones, no como personas.
 
+El inventario exhaustivo permanece separado de la selección editorial del acto. No se crean bloques de “responsables” para víctimas, afectados o nombres incidentales. La búsqueda pública y las páginas de actos dan prioridad a quienes adoptaron, firmaron, ejecutaron o supervisaron la actuación.
+
 ## 6. Niveles de responsabilidad
 
 | Nivel | Requisito | Formulación permitida |
@@ -115,6 +121,8 @@ Una ausencia se publica únicamente con cuatro datos:
 - repositorios consultados y fecha de la última comprobación.
 
 Cuando la ausencia impide conocer la motivación, competencia, autoría, procedimiento o notificación, la página explica exactamente esa consecuencia. No se reconstruye el contenido ausente a partir de una nota de prensa ni de una sentencia posterior. Si otro documento afirma que el acto existe, se registra como evidencia de esa afirmación, no como sustituto del acto.
+
+“No localizado” se reserva a una búsqueda cuyo resultado sigue abierto. Cuando la norma establece el deber de publicar, el plazo venció y las comprobaciones documentadas muestran que el órgano no publicó el registro exigible, la página describe la conducta como **no publicación** o **incumplimiento de publicación**.
 
 La página del acto describe el vacío y su consecuencia probatoria. Las instrucciones editoriales, el historial de decisiones y las fuentes secundarias de búsqueda permanecen fuera de la página pública del expediente.
 
@@ -144,10 +152,12 @@ Antes de publicar se comprueba que:
 - las reproducciones no oficiales están rotuladas como tales;
 - las autoridades de una institución tienen fuente y periodo;
 - cada persona indexada tiene acción, nivel de atribución y evidencia;
+- cada nombre de responsable o autoridad funcional enlaza a su registro y cada relación enlaza de vuelta al acto y al documento;
+- evidencia del acto, declaraciones de parte, normas/nombramientos y atribuciones externas aparecen en bloques distintos;
 - los vacíos no se presentan como hechos demostrados;
 - no hay prensa ni observadores en “Evidencia preservada”; y
 - el expediente puede leerse sin conocer el proceso editorial.
 
 ## 10. Correcciones
 
-Las correcciones conservan el historial de Git. El cambio identifica fecha, registro afectado, evidencia nueva y motivo. Un archivo preservado nunca se modifica bajo el mismo identificador.
+Las correcciones conservan el historial de Git. El cambio identifica fecha, registro afectado, evidencia nueva y motivo. Un archivo preservado nunca se modifica bajo el mismo identificador. Si una codificación heredada impide leerlo correctamente, se conserva el original y se publica una copia normalizada bajo identificador, hash y procedencia nuevos.

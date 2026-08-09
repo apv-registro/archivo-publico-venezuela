@@ -8,7 +8,7 @@
   "status": "partial",
   "evidence_records": [
     {"id":"VE-2021-CGR-RESOLUTION-01-00-000285","title":"Resolución 01-00-000285","preservation_status":"missing","evidence_class":"A"},
-    {"id":"VE-2024-RNV-TSJ-MACHADO","title":"Copia estatal de la ficha de la sentencia 00005","preservation_status":"preserved","evidence_class":"C","sha256":"35bfe83a7b0676c2161ce12f263d6c3a067bc688aac01c30f406424bf92c02b2","file":"documents/VE-2024-RNV-TSJ-MACHADO-2024-01-26.html","locator":"referencia a la resolución, fecha, órgano y duración"}
+    {"id":"VE-2024-RNV-TSJ-MACHADO","title":"Publicación de Radio Nacional de Venezuela sobre la ficha divulgada por el TSJ","preservation_status":"preserved","evidence_class":"C","sha256":"35bfe83a7b0676c2161ce12f263d6c3a067bc688aac01c30f406424bf92c02b2","file":"documents/VE-2024-RNV-TSJ-MACHADO-2024-01-26.html","locator":"referencia a la resolución, fecha, órgano y duración"}
   ],
   "normative_basis": [],
   "persons": [

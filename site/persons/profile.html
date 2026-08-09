@@ -3,12 +3,25 @@
 <section class="case-section"><p class="section-label">Apariciones en documentos preservados</p><div id="appearances"></div></section>
 </main><script>
 const id=new URLSearchParams(location.search).get('id');
-Promise.all([fetch('../data/people.json').then(r=>r.json()),fetch('../data/document-person-inventory.json').then(r=>r.json())]).then(([all,documents])=>{
+const actPages={
+  'VE-2021-ACT-CGR-MACHADO-DISQUALIFICATION':'VE-2021-ACT-CGR-MACHADO-DISQUALIFICATION.html',
+  'VE-2023-ACT-CGR-MACHADO-STATUS-LETTER':'VE-2023-ACT-CGR-MACHADO-STATUS-LETTER.html',
+  'VE-2023-ACT-TSJ-SC-1243':'VE-2023-ACT-TSJ-SC-1243.html',
+  'VE-2023-ACT-TSJ-SC-1244':'VE-2023-ACT-TSJ-SC-1244.html',
+  'VE-2024-ACT-MACHADO-DISQUALIFICATION':'VE-2024-ACT-MACHADO-DISQUALIFICATION.html',
+  'VE-2024-ACT-YORIS-NOMINATION-BLOCK':'VE-2024-ACT-YORIS-NOMINATION-BLOCK.html',
+  'VE-2024-ACT-RESULT-ANNOUNCEMENT':'VE-2024-ACT-RESULT-ANNOUNCEMENT.html',
+  'VE-2024-ACT-WITHHOLDING-RESULTS':'VE-2024-ACT-WITHHOLDING-RESULTS.html',
+  'VE-2024-ACT-TSJ-VALIDATION':'VE-2024-TSJ-ELECTION-VALIDATION.html'
+};
+const appendLinkOrText=(parent,label,href)=>{if(href){const a=document.createElement('a');a.href=href;a.textContent=label;parent.append(a);}else{parent.append(document.createTextNode(label));}};
+Promise.all([fetch('../data/people.json').then(r=>r.json()),fetch('../data/document-person-inventory.json').then(r=>r.json()),fetch('../documents/manifest.json').then(r=>r.json())]).then(([all,documents,manifest])=>{
+  const documentFiles=new Map(manifest.records.map(x=>[x.id,x.file]));
   const p=all.find(x=>x.id===id);if(!p)throw 0;document.title=p.name+' · APV';document.querySelector('#person-name').textContent=p.name;
-  document.querySelector('#relations').replaceChildren(...p.relations.map(x=>{const a=document.createElement('article');a.className='finding';const h=document.createElement('strong');h.textContent=x.quality;const d=document.createElement('p');d.textContent=`Acto: ${x.act||'no asociado a un acto del evento'} · Documento: ${x.document} · Localizador: ${x.locator}`;a.append(h,d);return a;}));
+  document.querySelector('#relations').replaceChildren(...p.relations.map(x=>{const a=document.createElement('article');a.className='finding';const h=document.createElement('strong');h.textContent=x.quality;const d=document.createElement('p');d.append('Acto: ');appendLinkOrText(d,x.act||'no asociado a un acto del evento',x.act&&actPages[x.act]?`../acts/${actPages[x.act]}`:null);d.append(' · Documento: ');appendLinkOrText(d,x.document,documentFiles.has(x.document)?`../documents/${documentFiles.get(x.document)}`:null);d.append(` · Localizador: ${x.locator}`);a.append(h,d);return a;}));
   const found=documents.flatMap(doc=>doc.people.filter(x=>x.person_id===id).map(x=>({...x,document_id:doc.document_id})));
   const box=document.querySelector('#appearances');
   if(!found.length){box.textContent='Sin aparición inventariada todavía.';return;}
-  box.replaceChildren(...found.map(x=>{const a=document.createElement('article');a.className='finding';const h=document.createElement('strong');h.textContent=x.relation;const d=document.createElement('p');d.textContent=`${x.document_id} · ${x.locator}${x.official_identifier?' · '+x.official_identifier:''} · impreso como: ${x.printed_name}`;a.append(h,d);return a;}));
+  box.replaceChildren(...found.map(x=>{const a=document.createElement('article');a.className='finding';const h=document.createElement('strong');h.textContent=x.relation;const d=document.createElement('p');appendLinkOrText(d,x.document_id,documentFiles.has(x.document_id)?`../documents/${documentFiles.get(x.document_id)}`:null);d.append(` · ${x.locator}${x.official_identifier?' · '+x.official_identifier:''} · impreso como: ${x.printed_name}`);a.append(h,d);return a;}));
 }).catch(()=>{document.querySelector('#person-name').textContent='Persona no localizada';});
 </script></body></html>
