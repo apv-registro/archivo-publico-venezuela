@@ -1,13 +1,15 @@
 {
   "id": "VE-2024-ACT-YORIS-NOMINATION-BLOCK",
   "event_id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
-  "title": "Impedimento de acceso al sistema de postulaciones",
+  "title": "Impedimento denunciado para postular a Corina Yoris",
   "date": "2024-03-21/2024-03-25",
   "issuer": ["VE-I-CNE"],
-  "action": "La Plataforma Unitaria declaró durante el plazo que las organizaciones autorizadas nunca obtuvieron acceso al sistema del CNE para registrar la postulación; el cierre oficial no incluyó esa candidatura.",
+  "action": "Las organizaciones participantes declararon durante y después del plazo que no obtuvieron acceso al sistema del CNE para registrar la candidatura anunciada de Corina Yoris; el cierre comunicado por el Estado enumeró las candidaturas admitidas sin incluirla.",
   "status": "partial",
   "evidence_records": [
-    {"id":"VE-2024-PUD-YORIS-POST","title":"Declaración contemporánea de la Plataforma Unitaria","preservation_status":"preserved","evidence_class":"B","sha256":"504f519cc962a450caa8b68f4f21fdd444ce9be7a72c94f71c2bf53268d9e95b","file":"documents/VE-2024-PUD-YORIS-POST-1772461251869749675.html","locator":"publicación de 26 de marzo de 2024, 04:11"},
+    {"id":"VE-2024-VENTE-YORIS-NOMINATION","title":"Anuncio de la candidatura y declaración de falta de acceso","preservation_status":"preserved","evidence_class":"B","sha256":"46954e58c658a048380113ea38b07eb1540772a4c6255f965b5649f71b22563b","file":"documents/VE-2024-VENTE-YORIS-NOMINATION-2024-03-22.html","locator":"publicación de 22 de marzo de 2024"},
+    {"id":"VE-2024-PUD-YORIS-POST","title":"Declaración durante el plazo sobre la candidatura unitaria","preservation_status":"preserved","evidence_class":"B","sha256":"504f519cc962a450caa8b68f4f21fdd444ce9be7a72c94f71c2bf53268d9e95b","file":"documents/VE-2024-PUD-YORIS-POST-1772461251869749675.html","locator":"publicación de 26 de marzo de 2024, 04:11 UTC"},
+    {"id":"VE-2024-PUD-NOMINATION-BLOCK","title":"Declaración posterior al cierre y solicitud de restitución del plazo","preservation_status":"preserved","evidence_class":"B","sha256":"358837b9609092d88c8d253436777964bdb9d497e71dc0b2b73e5a7daf1486b7","file":"documents/VE-2024-PUD-NOMINATION-BLOCK-1772478382220984594.html","locator":"publicación de 26 de marzo de 2024, 05:19 UTC"},
     {"id":"VE-2024-RNV-CNE-CANDIDATES","title":"Comunicación estatal del cierre de postulaciones","preservation_status":"preserved","evidence_class":"C","sha256":"f139e07b6b8995541afede51ab936078e098009b8b63abcc06cf2e46ca89b6a9","file":"documents/VE-2024-RNV-CNE-CANDIDATES-2024-03-26.html","locator":"lista de candidaturas y declaración de Elvis Amoroso"},
     {"id":"VE-2023-CIUDADCCS-CNE-DIRECTIVE","title":"Organización funcional del CNE","preservation_status":"preserved","evidence_class":"D","sha256":"9ad6d88de54696ad4542189b273b7ad90128c0d02e5fff9c7b28e7b1347988fa","file":"documents/VE-2023-CIUDADCCS-CNE-DIRECTIVE-2023-08-25.html","locator":"Junta Nacional Electoral y COPAFI"},
     {"id":"VE-2024-CNE-NOMINATION-LOGS","title":"Registros de acceso, incidencias y decisión sobre la postulación","preservation_status":"missing","evidence_class":"A"}
@@ -15,9 +17,15 @@
   "normative_basis": [
     {"title":"Ley Orgánica de Procesos Electorales","locator":"artículos 34-37 y 49-51","record_id":"VE-2009-LOPRE"}
   ],
-  "persons": [],
+  "persons": [
+    {"id":"VE-P-CORINA-YORIS-VILLASANA","action":"Persona cuya postulación fue anunciada y que declaró aceptar la designación.","attribution":"subject","evidence":["VE-2024-VENTE-YORIS-NOMINATION"]},
+    {"id":"VE-P-MARIA-CORINA-MACHADO-PARISCA","action":"Anunció la postulación y declaró que las tarjetas de MUD y UNT no tenían acceso al portal.","attribution":"direct_statement","evidence":["VE-2024-VENTE-YORIS-NOMINATION"]},
+    {"id":"VE-P-OMAR-BARBOZA-GUTIERREZ","action":"Participó en el anuncio como coordinador de la Plataforma Unitaria.","attribution":"direct_statement","evidence":["VE-2024-VENTE-YORIS-NOMINATION"]},
+    {"id":"VE-P-NICOLAS-MADURO","action":"La Plataforma Unitaria le atribuyó públicamente el impedimento; el registro no identifica al operador técnico.","attribution":"attributed_claim","evidence":["VE-2024-PUD-NOMINATION-BLOCK"]}
+  ],
   "findings": [
-    "La declaración directa acredita que la organización denunció falta total de acceso antes de vencer el plazo; no identifica el operador ni prueba por sí sola el mecanismo técnico.",
+    "La publicación del 22 de marzo identifica a Corina Yoris como la candidatura anunciada y recoge la declaración contemporánea de que MUD y UNT no tenían acceso al portal.",
+    "La declaración de las 05:19 UTC del 26 de marzo afirma que el acceso nunca fue habilitado desde el inicio del plazo y solicita su restitución; no identifica al operador técnico.",
     "La comunicación estatal acredita que el CNE cerró el proceso, enumeró las candidaturas admitidas y lo describió como satisfactorio y sin restricciones.",
     "El CNE no publicó registros técnicos, respuesta individualizada ni resolución que permita auditar la discrepancia."
   ],

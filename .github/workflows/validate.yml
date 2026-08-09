@@ -1,0 +1,17 @@
+name: Validate archive
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate manifest, hashes, people and links
+        shell: pwsh
+        run: ./tools/validate-archive.ps1

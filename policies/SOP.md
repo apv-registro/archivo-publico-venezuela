@@ -1,6 +1,6 @@
 # SOP-01: documentación de eventos, actos y responsabilidad
 
-Versión 2.1 — obligatoria para todo expediente nuevo o revisado.
+Versión 2.2 — obligatoria para todo expediente nuevo o revisado.
 
 ## 1. Finalidad
 
@@ -23,6 +23,10 @@ Decisión, acción, omisión o comunicación atribuible a un órgano y delimitab
 ### Persona
 
 Toda persona identificable que aparezca en un documento preservado se registra una sola vez y se enlaza con el documento, el localizador exacto y la calidad en que aparece. El inventario distingue, como mínimo: sujeto afectado, solicitante, abogado, destinatario, firmante, decisor, autoridad funcional, compareciente y persona meramente mencionada. La aparición documental no equivale a responsabilidad.
+
+### Registro documento–persona
+
+Cada archivo del manifiesto tiene una entrada propia en el inventario nominal, incluso cuando no contiene personas. La entrada declara el alcance de la revisión, enumera cada nombre o persona visible, conserva la forma impresa, asigna un localizador y enlaza un perfil único. Una copia derivada, cada página preservada por separado y el original compuesto se revisan como archivos distintos.
 
 ## 3. Clases de evidencia publicable
 
@@ -66,6 +70,30 @@ La URL original acompaña la procedencia, pero nunca es el único acceso. Una ca
 12. **Actualizar el evento.** La conclusión se deriva solo de los actos publicados.
 13. **Validar.** Hashes, enlaces locales, metadatos, citas, JSON, inventario nominal, lenguaje público y coherencia entre índice, evento y actos.
 
+## 5.1 Correspondencia obligatoria entre acto y fuente
+
+Antes de publicar un documento bajo un acto se completa una matriz con cinco campos:
+
+| Campo | Pregunta de control |
+|---|---|
+| Emisor | ¿Quién produjo o comunicó el registro? |
+| Objeto | ¿Qué decisión, acción, omisión o afirmación demuestra exactamente? |
+| Alcance | ¿Demuestra el acto, una parte, su existencia, su contexto normativo o una atribución externa? |
+| Límite | ¿Qué conclusión no permite extraer? |
+| Localizador | ¿Dónde aparece el dato: página, párrafo, minuto, fotograma o campo? |
+
+Un enlace relacionado, una reproducción periodística o una declaración posterior no se rotulan como la resolución, sentencia, acta o registro técnico que falta. Si una fuente solo acredita que alguien formuló una denuncia, la página atribuye la afirmación a ese emisor y no la convierte en hecho técnico probado.
+
+## 5.2 Revisión nominal por formato
+
+- **PDF e imagen:** inspección visual de todas las páginas, incluidos sellos, firmas, pies y anexos.
+- **HTML:** contenido principal, autoría, metadatos visibles y elementos incidentales incluidos en el archivo preservado. Los nombres de enlaces relacionados o respuestas se inventarían como menciones incidentales.
+- **CSV y JSON:** cabeceras, campos descriptivos, metadatos de adquisición e identificadores que representen personas.
+- **Audio y vídeo:** escucha y revisión de la secuencia completa; nombres pronunciados, rótulos y todas las personas visibles. La identificación visual debe apoyarse en un registro contemporáneo de cargo, pie de imagen o fuente equivalente; si no alcanza, se publica como persona visible no identificada y el expediente permanece abierto.
+- **Documento ausente:** no genera personas por inferencia. Las autoridades del órgano se documentan aparte, con cargo, periodo y nivel de atribución institucional.
+
+La revisión no termina al encontrar a los decisores. Incluye afectados, partes, abogados, autores, firmantes, funcionarios, candidatos, precedentes citados, personas mencionadas y cuentas personales capturadas incidentalmente. Las entidades colectivas se registran como instituciones, no como personas.
+
 ## 6. Niveles de responsabilidad
 
 | Nivel | Requisito | Formulación permitida |
@@ -107,6 +135,10 @@ Las calificaciones como fraude, ilegitimidad o inconstitucionalidad deben defini
 Antes de publicar se comprueba que:
 
 - cada archivo público está en el manifiesto y su hash coincide;
+- cada registro del manifiesto tiene exactamente una entrada revisada en el inventario documento–persona;
+- cada persona inventariada resuelve a un perfil único y no existen identificadores o perfiles duplicados;
+- cada audiovisual fue revisado en toda su duración y registra a las personas nombradas, rotuladas y visibles;
+- cada documento está asociado solamente a actos que coinciden con su emisor, objeto y alcance declarado;
 - ninguna evidencia depende de un enlace externo;
 - cada cifra agregada puede recalcularse o se identifica como afirmación de su emisor;
 - las reproducciones no oficiales están rotuladas como tales;
