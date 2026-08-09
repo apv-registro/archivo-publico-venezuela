@@ -1,0 +1,24 @@
+{
+  "id": "VE-2023-ACT-TSJ-SC-1244",
+  "event_id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
+  "title": "Rechazo de la revisión promovida por Alexis Coronel y Miguel Prieto sobre la inhabilitación de María Corina Machado",
+  "date": "2023-08-14",
+  "issuer": ["VE-I-TSJ-SC"],
+  "action": "La Sala Constitucional declaró improponible la solicitud porque la revisión constitucional se dirige contra decisiones judiciales firmes y no contra actos administrativos.",
+  "status": "reviewed",
+  "evidence_records": [{"id":"VE-2023-TSJ-SC-SENTENCE-1244","title":"Sentencia 1244, expediente 23-0722","preservation_status":"preserved","evidence_class":"A","sha256":"a057f35f2390be7f26c70ffe2cdf9b1b2a72f171f03b837361a589dcdee6a29a","file":"documents/VE-2023-TSJ-SC-SENTENCE-1244-2023-08-14.html","locator":"texto íntegro y firmas"}],
+  "normative_basis": [],
+  "persons": [
+    {"id":"VE-P-ALEXIS-CORONEL-ROCHE","action":"Solicitó la revisión constitucional.","attribution":"claimant","evidence":["VE-2023-TSJ-SC-SENTENCE-1244:inicio"]},
+    {"id":"VE-P-MIGUEL-PRIETO-NARVAEZ","action":"Solicitó la revisión constitucional.","attribution":"claimant","evidence":["VE-2023-TSJ-SC-SENTENCE-1244:inicio"]},
+    {"id":"VE-P-WUILMAN-MOLINA-ROMERO","action":"Asistió como abogado a los solicitantes.","attribution":"counsel","evidence":["VE-2023-TSJ-SC-SENTENCE-1244:inicio"]},
+    {"id":"VE-P-GLADYS-GUTIERREZ-ALVARADO","action":"Firmó como presidenta de la Sala.","attribution":"collegial","evidence":["VE-2023-TSJ-SC-SENTENCE-1244:firmas"]},
+    {"id":"VE-P-LOURDES-SUAREZ-ANDERSON","action":"Firmó como vicepresidenta de la Sala.","attribution":"collegial","evidence":["VE-2023-TSJ-SC-SENTENCE-1244:firmas"]},
+    {"id":"VE-P-LUIS-DAMIANI-BUSTILLOS","action":"Firmó como magistrado ponente.","attribution":"direct","evidence":["VE-2023-TSJ-SC-SENTENCE-1244:firmas"]},
+    {"id":"VE-P-TANIA-DAMELIO-CARDIET","action":"Firmó como magistrada.","attribution":"collegial","evidence":["VE-2023-TSJ-SC-SENTENCE-1244:firmas"]},
+    {"id":"VE-P-MICHEL-VELASQUEZ-GRILLET","action":"Firmó como magistrada.","attribution":"collegial","evidence":["VE-2023-TSJ-SC-SENTENCE-1244:firmas"]},
+    {"id":"VE-P-CARLOS-GARCIA-USECHE","action":"Firmó como secretario.","attribution":"certifying_officer","evidence":["VE-2023-TSJ-SC-SENTENCE-1244:firmas"]}
+  ],
+  "findings": ["La Sala no revisó el fondo del acto administrativo; declaró improponible la vía escogida."],
+  "open_questions": []
+}

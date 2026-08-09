@@ -1,8 +1,5 @@
-private/
-incoming/
-*.tmp
-*.log
-.env
-.DS_Store
-Thumbs.db
-
+research/SCRIBD-*.jsonp
+research/SCRIBD-*.html
+research/rendered-*/
+research/*-extracted.txt
+research/CIUDADCCS-*.html

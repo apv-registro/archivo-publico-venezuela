@@ -1,19 +1,22 @@
 {
   "id": "VE-2021-ACT-CGR-MACHADO-DISQUALIFICATION",
   "event_id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
-  "title": "Inhabilitación administrativa atribuida a la Contraloría General",
+  "title": "Inhabilitación de María Corina Machado atribuida a la Contraloría General",
   "date": "2021-09-16",
   "issuer": ["VE-I-CGR"],
-  "action": "La Contraloría General habría impuesto mediante la resolución 01-00-000285 una inhabilitación de quince años que el TSJ mantuvo en enero de 2024.",
+  "action": "Una ficha judicial divulgada en enero de 2024 afirma que la Contraloría General impuso a María Corina Machado una inhabilitación de quince años mediante la resolución 01-00-000285 de 16 de septiembre de 2021.",
   "status": "partial",
   "evidence_records": [
     {"id":"VE-2021-CGR-RESOLUTION-01-00-000285","title":"Resolución 01-00-000285","preservation_status":"missing","evidence_class":"A"},
-    {"id":"VE-2024-RNV-TSJ-MACHADO","title":"Reproducción estatal del dispositivo de la sentencia 00005","preservation_status":"preserved","evidence_class":"C","sha256":"35bfe83a7b0676c2161ce12f263d6c3a067bc688aac01c30f406424bf92c02b2","file":"documents/VE-2024-RNV-TSJ-MACHADO-2024-01-26.html","locator":"párrafos que identifican la resolución, fecha, órgano y duración"}
+    {"id":"VE-2024-RNV-TSJ-MACHADO","title":"Copia estatal de la ficha de la sentencia 00005","preservation_status":"preserved","evidence_class":"C","sha256":"35bfe83a7b0676c2161ce12f263d6c3a067bc688aac01c30f406424bf92c02b2","file":"documents/VE-2024-RNV-TSJ-MACHADO-2024-01-26.html","locator":"referencia a la resolución, fecha, órgano y duración"}
   ],
   "normative_basis": [],
-  "persons": [],
+  "persons": [
+    {"id":"VE-P-MARIA-CORINA-MACHADO-PARISCA","action":"Persona sancionada según la ficha judicial posterior.","attribution":"subject","evidence":["VE-2024-RNV-TSJ-MACHADO:dispositivo"]},
+    {"id":"VE-P-ELVIS-AMOROSO","action":"Era contralor general en la fecha atribuida a la resolución; el documento sancionatorio no está disponible y no permite afirmar quién lo firmó.","attribution":"authority_and_supervision","evidence":["appointment-record:period-2018-2023"]}
+  ],
   "findings": [
-    "La existencia, número, fecha, órgano y duración de la sanción están reproducidos en la comunicación estatal del fallo posterior.",
+    "La existencia, número, fecha, órgano y duración de la sanción solo están reproducidos en la ficha judicial posterior.",
     "Sin la resolución original no se conocen su firmante, procedimiento, motivación, constancia de notificación ni publicación."
   ],
   "open_questions": ["Localizar la resolución íntegra, su expediente administrativo y las constancias de notificación y publicación."]

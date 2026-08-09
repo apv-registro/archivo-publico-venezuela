@@ -12,7 +12,7 @@
     "date": {"type": "string"},
     "issuer": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
     "action": {"type": "string", "minLength": 20},
-    "status": {"enum": ["open", "partial", "documented", "disputed"]},
+    "status": {"enum": ["open", "partial", "reviewed", "documented", "disputed"]},
     "evidence_records": {"type": "array", "items": {"$ref": "#/$defs/record"}},
     "normative_basis": {"type": "array", "items": {"$ref": "#/$defs/citation"}},
     "persons": {"type": "array", "items": {"$ref": "#/$defs/person_link"}},
@@ -42,7 +42,7 @@
       "required": ["id", "action", "attribution", "evidence"],
       "properties": {
         "id": {"type": "string"}, "action": {"type": "string"},
-        "attribution": {"enum": ["direct", "collegial", "authority_supervision"]},
+        "attribution": {"enum": ["direct", "collegial", "authority_supervision", "authority_and_supervision", "recipient", "subject", "claimant", "claimant_subject", "counsel", "certifying_officer", "mentioned"]},
         "evidence": {"type": "array", "items": {"type": "string"}, "minItems": 1}
       }
     }

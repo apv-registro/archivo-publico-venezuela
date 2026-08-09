@@ -1,0 +1,22 @@
+{
+  "id": "VE-2023-ACT-TSJ-SC-1243",
+  "event_id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
+  "title": "Inadmisión del amparo promovido por Otoniel Pautt sobre la inhabilitación de María Corina Machado",
+  "date": "2023-08-14",
+  "issuer": ["VE-I-TSJ-SC"],
+  "action": "La Sala Constitucional recondujo la demanda colectiva a amparo autónomo y la declaró inadmisible por falta de legitimidad.",
+  "status": "reviewed",
+  "evidence_records": [{"id":"VE-2023-TSJ-SC-SENTENCE-1243","title":"Sentencia 1243, expediente 23-0706","preservation_status":"preserved","evidence_class":"A","sha256":"cc3af8eb61aefca828017d3cbb5119ba2c730d295142aeed21f305e933fb631f","file":"documents/VE-2023-TSJ-SC-SENTENCE-1243-2023-08-14.html","locator":"texto íntegro y firmas"}],
+  "normative_basis": [],
+  "persons": [
+    {"id":"VE-P-OTONIEL-PAUTT-ANDRADE","action":"Promovió la demanda en nombre propio.","attribution":"claimant","evidence":["VE-2023-TSJ-SC-SENTENCE-1243:inicio"]},
+    {"id":"VE-P-GLADYS-GUTIERREZ-ALVARADO","action":"Firmó como presidenta de la Sala.","attribution":"collegial","evidence":["VE-2023-TSJ-SC-SENTENCE-1243:firmas"]},
+    {"id":"VE-P-LOURDES-SUAREZ-ANDERSON","action":"Firmó como vicepresidenta de la Sala.","attribution":"collegial","evidence":["VE-2023-TSJ-SC-SENTENCE-1243:firmas"]},
+    {"id":"VE-P-LUIS-DAMIANI-BUSTILLOS","action":"Firmó como magistrado.","attribution":"collegial","evidence":["VE-2023-TSJ-SC-SENTENCE-1243:firmas"]},
+    {"id":"VE-P-TANIA-DAMELIO-CARDIET","action":"Firmó como magistrada.","attribution":"collegial","evidence":["VE-2023-TSJ-SC-SENTENCE-1243:firmas"]},
+    {"id":"VE-P-MICHEL-VELASQUEZ-GRILLET","action":"Firmó como magistrada.","attribution":"collegial","evidence":["VE-2023-TSJ-SC-SENTENCE-1243:firmas"]},
+    {"id":"VE-P-CARLOS-GARCIA-USECHE","action":"Firmó como secretario.","attribution":"certifying_officer","evidence":["VE-2023-TSJ-SC-SENTENCE-1243:firmas"]}
+  ],
+  "findings": ["La Sala no examinó el fondo de la inhabilitación: inadmitió la pretensión por falta de legitimidad del demandante."],
+  "open_questions": []
+}

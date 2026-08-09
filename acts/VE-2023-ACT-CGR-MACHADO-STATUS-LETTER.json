@@ -1,0 +1,24 @@
+{
+  "id": "VE-2023-ACT-CGR-MACHADO-STATUS-LETTER",
+  "event_id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
+  "title": "Comunicación de la Contraloría sobre la inhabilitación de María Corina Machado",
+  "date": "2023-06-27",
+  "issuer": ["VE-I-CGR-DGPE"],
+  "action": "La Dirección General de Procedimientos Especiales comunicó al diputado José Dionisio Brito que María Corina Machado se encontraba inhabilitada durante quince años.",
+  "status": "reviewed",
+  "evidence_records": [
+    {"id":"VE-2023-CGR-OFFICIO-DGPE-23-08-00-008","title":"Oficio DGPE-23-08-00-008","preservation_status":"preserved","evidence_class":"C","sha256":"f4d9a66894b01372eccb594f128945d4f3b92b3206fd7ac4579b24841d339896","file":"documents/VE-2023-CGR-OFFICIO-DGPE-23-08-00-008.pdf","locator":"5 páginas"}
+  ],
+  "normative_basis": [],
+  "persons": [
+    {"id":"VE-P-ANTONIO-JOSE-MENESES-RODRIGUEZ","action":"Firmó el oficio como director general de Procedimientos Especiales.","attribution":"direct","evidence":["VE-2023-CGR-OFFICIO-DGPE-23-08-00-008:p.5"]},
+    {"id":"VE-P-JOSE-DIONISIO-BRITO-RODRIGUEZ","action":"Destinatario del oficio y autor de la solicitud a la que responde.","attribution":"recipient","evidence":["VE-2023-CGR-OFFICIO-DGPE-23-08-00-008:p.1"]},
+    {"id":"VE-P-MARIA-CORINA-MACHADO-PARISCA","action":"Persona cuyo estado de inhabilitación comunica el oficio.","attribution":"subject","evidence":["VE-2023-CGR-OFFICIO-DGPE-23-08-00-008:pp.1-5"]}
+  ],
+  "findings": [
+    "El oficio es una comunicación, no el acto que impuso la sanción de quince años.",
+    "El oficio cita la resolución 01-00-000398 de 13 de julio de 2015, que impuso doce meses, y afirma que una investigación continuada produjo una inhabilitación de quince años.",
+    "No identifica el número, fecha, firmante ni expediente del acto posterior que habría impuesto los quince años."
+  ],
+  "open_questions": ["Localizar el acto sancionatorio posterior, el expediente, la notificación y la constancia de firmeza."]
+}

@@ -58,8 +58,23 @@
     });
   });
 
-  fetch('data/catalog.json')
-    .then(response => { if (!response.ok) throw new Error('catalog'); return response.json(); })
-    .then(records => { state.records = records; render(); })
+  Promise.all([
+    fetch('data/catalog.json').then(response => { if (!response.ok) throw new Error('catalog'); return response.json(); }),
+    fetch('data/people.json').then(response => { if (!response.ok) throw new Error('people'); return response.json(); })
+  ])
+    .then(([records, people]) => {
+      const personRecords = people.map(person => ({
+        type: 'person',
+        title: person.name,
+        href: `persons/profile.html?id=${encodeURIComponent(person.id)}`,
+        summary: person.relations.map(relation => relation.quality).join(' · '),
+        date: '',
+        keywords: [person.id, ...person.relations.flatMap(relation => [relation.act, relation.document, relation.quality])]
+      }));
+      const inventoriedNames = new Set(people.map(person => normalized(person.name)));
+      const retained = records.filter(record => record.type !== 'person' || !inventoriedNames.has(normalized(record.title)));
+      state.records = [...retained, ...personRecords];
+      render();
+    })
     .catch(() => { count.textContent = 'Archivo no disponible'; empty.hidden = false; });
 })();

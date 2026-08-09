@@ -1,7 +1,7 @@
 {
   "id": "VE-2024-ACT-MACHADO-DISQUALIFICATION",
   "event_id": "VE-2024-EVENT-PRESIDENTIAL-ELECTION",
-  "title": "Ratificación judicial de la inhabilitación administrativa",
+  "title": "Decisión de la Sala Político-Administrativa sobre la inhabilitación de María Corina Machado",
   "date": "2024-01-26",
   "issuer": ["VE-I-TSJ-SPA"],
   "action": "La Sala Político-Administrativa rechazó la reclamación del expediente 2023-0461 y mantuvo la inhabilitación de quince años atribuida a la Contraloría.",
@@ -14,6 +14,8 @@
   ],
   "normative_basis": [],
   "persons": [
+    {"id":"VE-P-MARIA-CORINA-MACHADO-PARISCA","action":"Demandante y persona afectada por la inhabilitación.","attribution":"claimant_subject","evidence":["VE-2024-RNV-TSJ-MACHADO:dispositivo"]},
+    {"id":"VE-P-PERKINS-ROCHA-CONTRERAS","action":"Abogado asistente identificado en la ficha divulgada.","attribution":"counsel","evidence":["VE-2024-RNV-TSJ-MACHADO:dispositivo"]},
     {"id":"VE-P-MALAQUIAS-GIL","action":"Participó en la decisión de enero de 2024 como presidente de la Sala, según la atribución formal de la Unión Europea.","attribution":"collegial","evidence":["EU-2025-DECISION-2025-49:p.4:entry-59"]}
   ],
   "findings": [

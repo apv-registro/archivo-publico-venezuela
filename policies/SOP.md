@@ -1,6 +1,6 @@
 # SOP-01: documentación de eventos, actos y responsabilidad
 
-Versión 2.0 — obligatoria para todo expediente nuevo o revisado.
+Versión 2.1 — obligatoria para todo expediente nuevo o revisado.
 
 ## 1. Finalidad
 
@@ -22,7 +22,7 @@ Decisión, acción, omisión o comunicación atribuible a un órgano y delimitab
 
 ### Persona
 
-Solo se incorpora al índice de responsables cuando una fuente la conecta con una acción concreta. La persona afectada puede mencionarse para explicar el efecto del acto, pero no se incluye en la sección de responsables ni se indexa como tal.
+Toda persona identificable que aparezca en un documento preservado se registra una sola vez y se enlaza con el documento, el localizador exacto y la calidad en que aparece. El inventario distingue, como mínimo: sujeto afectado, solicitante, abogado, destinatario, firmante, decisor, autoridad funcional, compareciente y persona meramente mencionada. La aparición documental no equivale a responsabilidad.
 
 ## 3. Clases de evidencia publicable
 
@@ -34,7 +34,7 @@ Solo se incorpora al índice de responsables cuando una fuente la conecta con un
 | D | Norma o registro oficial de competencia, nombramiento y estructura | Contraste normativo e identificación institucional |
 | E | Decisión oficial de otro Estado u organismo que atribuye nominalmente una conducta | Corroboración atribuida; no sustituye el registro venezolano del acto |
 
-Prensa, informes de observación, análisis académicos y comentarios sirven para descubrir o contrastar fuentes durante la investigación. No aparecen como documentos preservados de un acto ni sustituyen una fuente de clases A-E.
+Prensa, informes de observación, análisis académicos y comentarios forman una bibliografía de investigación separada. Sirven para localizar, interpretar o contrastar fuentes, pero no aparecen como evidencia preservada del acto ni sustituyen una fuente de clases A-E. Cada conclusión jurídica tomada de esa bibliografía se atribuye a su autor; el archivo no la presenta como contenido del documento oficial.
 
 ## 4. Puerta de preservación
 
@@ -58,12 +58,13 @@ La URL original acompaña la procedencia, pero nunca es el único acceso. Una ca
 4. **Buscar por capas.** Órgano autor, gacetas y repositorios estatales; copias contemporáneas; archivos web; registros directos de participantes.
 5. **Preservar.** Aplicar la puerta de preservación y añadir el archivo al manifiesto.
 6. **Extraer afirmaciones atómicas.** Cada proposición lleva documento y localizador: página, artículo, párrafo, minuto o campo.
-7. **Contrastar con la norma.** Tabla obligatoria: requisito, fuente, conducta observada y discrepancia.
-8. **Reconstruir competencia.** Identificar órgano, unidad funcional y titulares del periodo mediante documentos de clase D.
-9. **Atribuir responsabilidad.** Aplicar los niveles del apartado 6.
-10. **Redactar el acto.** Exponer conducta, evidencia, efecto, discrepancia, responsables y vacíos.
-11. **Actualizar el evento.** La conclusión se deriva solo de los actos publicados.
-12. **Validar.** Hashes, enlaces locales, metadatos, citas, JSON, lenguaje público y coherencia entre índice, evento y actos.
+7. **Inventariar todas las personas.** Leer el documento completo y registrar cada nombre, variante, calidad, acto relacionado y localizador. Distinguir la participación en el acto de una cita, antecedente, destinatario o mención contextual.
+8. **Contrastar con la norma.** Tabla obligatoria: requisito, fuente, conducta observada y discrepancia.
+9. **Reconstruir competencia.** Identificar órgano, unidad funcional y titulares del periodo mediante documentos de clase D.
+10. **Atribuir responsabilidad.** Aplicar los niveles del apartado 6.
+11. **Redactar el acto.** Exponer conducta, evidencia, efecto, discrepancia, responsables y vacíos.
+12. **Actualizar el evento.** La conclusión se deriva solo de los actos publicados.
+13. **Validar.** Hashes, enlaces locales, metadatos, citas, JSON, inventario nominal, lenguaje público y coherencia entre índice, evento y actos.
 
 ## 6. Niveles de responsabilidad
 
@@ -84,6 +85,8 @@ Una ausencia se publica únicamente con cuatro datos:
 - órgano que debía producirlo o custodiarlo;
 - evidencia de su existencia o del deber de producirlo; y
 - repositorios consultados y fecha de la última comprobación.
+
+Cuando la ausencia impide conocer la motivación, competencia, autoría, procedimiento o notificación, la página explica exactamente esa consecuencia. No se reconstruye el contenido ausente a partir de una nota de prensa ni de una sentencia posterior. Si otro documento afirma que el acto existe, se registra como evidencia de esa afirmación, no como sustituto del acto.
 
 La página del acto describe el vacío y su consecuencia probatoria. Las instrucciones editoriales, el historial de decisiones y las fuentes secundarias de búsqueda permanecen fuera de la página pública del expediente.
 
