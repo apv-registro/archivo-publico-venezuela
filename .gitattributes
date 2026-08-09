@@ -1,0 +1,12 @@
+# Repository-authored text uses a stable line ending on every platform.
+*.json text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.ps1 text eol=lf
+*.yml text eol=lf
+
+# Preserved evidence must be stored byte-for-byte. This rule comes last so it
+# overrides the extension rules above and Git never normalizes the evidence.
+documents/** -text
